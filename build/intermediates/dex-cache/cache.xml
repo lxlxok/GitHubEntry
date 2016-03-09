@@ -6,259 +6,259 @@
         jumboMode="false"
         revision="23.0.2"
         sha1="83fed2e3554b8bacf8209bc22b62d76d4f674533">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\logging-interceptor-3.0.0-RC1-8c42bcba6beb5cf4ed812536331f340df4ce4340.jar" />
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\logging-interceptor-3.0.0-RC1-8c42bcba6beb5cf4ed812536331f340df4ce4340.jar" />
     </item>
     <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\jars\classes.jar"
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-84f458837eab019f551ab0f8e8e2dd004658cb43.jar" />
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-f1e4644f90281069ce4da215242384bd2cfa5f76.jar" />
+    </item>
+    <item
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-8cbbd21bf3729ba9f666e2d23fca348d3c71e2d9.jar" />
+    </item>
+    <item
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-e2504c2e09e1b32f29e512115c800d1f1ad0fc88.jar" />
     </item>
     <item
         jar="C:\Users\liuju\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.0-beta3\97675641051febfee098903cc0eff62f2826e34e\retrofit-2.0.0-beta3.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="97675641051febfee098903cc0eff62f2826e34e">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\retrofit-2.0.0-beta3-8436ead500b6123b047f0df7d3c6f4fced3578d7.jar" />
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\retrofit-2.0.0-beta3-8436ead500b6123b047f0df7d3c6f4fced3578d7.jar" />
     </item>
     <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\jars\classes.jar"
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="04de44f90606c77f3b28cf44861f306290505aac">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-3d539b9b2379838bfeae453669cb34715e9163c5.jar" />
+        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-8d4087ed1ed54f5e124959208c2dd70377c7f308.jar" />
     </item>
     <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-dfe60d8c5c918a2511679dc2f59c41bd1937eb96.jar" />
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-793994a3aa1ce0a3a201cdd28eb6b381b2cf2eda.jar" />
     </item>
     <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\jars\classes.jar"
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-d17d1a7446894fde63b41030873aaa627557f367.jar" />
+        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-60cbcb0c7bad2287a7687f115eee887f0e3dfb1f.jar" />
     </item>
     <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-a838ae7c526c1da6fb272166a805808e56370730.jar" />
-    </item>
-    <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-dfc1593206f7506c1abff0afdd7f0fe3092e344e.jar" />
-    </item>
-    <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-fa9e42ecd8fe56fec27b8dfce75f40b3b0a34866.jar" />
+        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-04040af30bef468d2940489e6bf588b767e31f2e.jar" />
     </item>
     <item
         jar="C:\Users\liuju\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.0-beta3\8bff75d7360aaa3866f1e6949c877dfcc2b3d3e2\converter-gson-2.0.0-beta3.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="8bff75d7360aaa3866f1e6949c877dfcc2b3d3e2">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\converter-gson-2.0.0-beta3-5a25fda91e66012dad5b80ec3c09654d0acee786.jar" />
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\converter-gson-2.0.0-beta3-5a25fda91e66012dad5b80ec3c09654d0acee786.jar" />
     </item>
     <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\jars\classes.jar"
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-84c4b669eec3f38b4f0916e13311cbb26e1a19d1.jar" />
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-d23aa6b6919e405b2144f8aa19ba2c460d19f26b.jar" />
     </item>
     <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.4.0\jars\classes.jar"
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-e8dc9e275589985d51119552904133854b636d04.jar" />
+        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-f224bbe4f6686c642f723dedf29eb262a8bf4837.jar" />
+    </item>
+    <item
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="dfecc4d835cdabcdecf7e95f0d20a3ef1e9d8ef4">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-f14ac4e2a4c9add41f6135c6ff728b444245f31d.jar" />
     </item>
     <item
         jar="C:\Users\liuju\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\okio-1.6.0-446fe12151a2dca251f9cf16a64e9ffd47ac7d27.jar" />
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\okio-1.6.0-446fe12151a2dca251f9cf16a64e9ffd47ac7d27.jar" />
     </item>
     <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.4.0\jars\classes.jar"
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-564b5ecdc72d96187d146f8dc89305b6446d4961.jar" />
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-8b1816ff1b3bdeff4efb42c2dba41f622aacf3e0.jar" />
     </item>
     <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\jars\classes.jar"
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-1351c799fb2617bfddd61c2805b1c087f1efe38f.jar" />
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-614cb1cf42965cec5845314ec102bea7912c17f1.jar" />
     </item>
     <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.4.0\jars\classes.jar"
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-a7579994d694930243b91aa0eb49b3df75549ff8.jar" />
+    </item>
+    <item
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-77e1d21d7dffe87af1b2d3ef28d095ea82f10102.jar" />
+    </item>
+    <item
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-e235dd8c43d385a19337e17ed404feb5a56377ce.jar" />
+    </item>
+    <item
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="3a364cc6b698d1b3b2d284f64618daaa7fe77ddf">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-0dbbfc202a743ae24da04f73ddce49fa7727a22a.jar" />
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-7889dccc490cae21328723b584589b5d52b5bdcc.jar" />
     </item>
     <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.4.0\jars\classes.jar"
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-ab3570b4f8d6006bb5e094acbd8e435b0423ffd0.jar" />
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-ac171376db6f4ba1ff9f2090919bd8193881bfc7.jar" />
     </item>
     <item
         jar="C:\Users\liuju\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.0.0-RC1\be7e96331952019f16dc52dce09ab25df29353d7\okhttp-3.0.0-RC1.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="be7e96331952019f16dc52dce09ab25df29353d7">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\okhttp-3.0.0-RC1-963339ee8a7ebe73c6d92ca80b1c7af08db05b40.jar" />
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\okhttp-3.0.0-RC1-963339ee8a7ebe73c6d92ca80b1c7af08db05b40.jar" />
     </item>
     <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.4.0\jars\classes.jar"
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-8a2c44596f63e038535a97ed42848a5cd2706ce5.jar" />
+        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-5f1b6911178645a7726465da7a5b84a5a2926881.jar" />
     </item>
     <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.4.0\jars\classes.jar"
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-aeaaab81b6ceeecc75fc0a92ac808733f3735766.jar" />
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-5a6e366b86fa69764639c70af961b71b4c6d04b8.jar" />
     </item>
     <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.4.0\jars\classes.jar"
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-50a1a3ef3acde168a3b2c9addb6fec3e95079bb7.jar" />
-    </item>
-    <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-9dcd71726cdb7c79b742f5b8e63cee70f1909f50.jar" />
-    </item>
-    <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-13f3b93f81b13ed6ad0d71ca44be76df30c07e8c.jar" />
-    </item>
-    <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-d562d948521f9bbfdfaf45c16c1df1d62c2f2e57.jar" />
-    </item>
-    <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-78dfeb596e61bfef68a632f070feecb1d2e04ccf.jar" />
+        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-6a187cfa78b7a4809ce15f10fcdaf9de9e43bcd7.jar" />
     </item>
     <item
         jar="C:\Users\liuju\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1-8f258fba4a09921ffa13fe33bae7dfee30afde72.jar" />
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1-8f258fba4a09921ffa13fe33bae7dfee30afde72.jar" />
     </item>
     <item
         jar="C:\Users\liuju\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.4\695b63d702f505b9b916e02272e3b6381bade7f\gson-2.4.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\gson-2.4-6cbc9d96854b208f2822bd7ff33adaf0e04382dd.jar" />
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\gson-2.4-6cbc9d96854b208f2822bd7ff33adaf0e04382dd.jar" />
     </item>
     <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-3585ad3525ec16f0efcf2c4eb9b5591e541d4919.jar" />
-    </item>
-    <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\libs\internal_impl-23.0.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-1eec57e7ec9def4eca755aa055e7e4e369e35879.jar" />
-    </item>
-    <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="dfecc4d835cdabcdecf7e95f0d20a3ef1e9d8ef4">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-568aaabda7b10842f944ef3c179cc7f4afbe4cf6.jar" />
-    </item>
-    <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-193faf919e0e22a4b3dad985a631f44518467bc5.jar" />
-    </item>
-    <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-e52bb66b94106ddb9d5864ee432250222f0f29f3.jar" />
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-0bd70c7a424cb0835c5d523cf593f5faccc6f1c5.jar" />
     </item>
     <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-b4fa753d79bdbdb368001cb978ae2e28a0d0a925.jar" />
-    </item>
-    <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-968e0d6d845bb87ec43b7c5102f3c7ba250ec1b5.jar" />
-    </item>
-    <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="b36f30ac5ee5d5214f4b1e2ac49f11889d58e71a">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-9955006410d9e0a4acd7bb47ab31943bec8f73ea.jar" />
-    </item>
-    <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="379471b2bd17d9737c050345c08e8c7d16589784">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-6da9642250c0b8b3a66dd65c8333936cd46797b1.jar" />
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-b9ba08162f60dc608bc9301be92a1c2cf4e2e24c.jar" />
     </item>
     <item
-        jar="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.4.0\jars\classes.jar"
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
-        <dex dex="C:\Users\liuju\Documents\GitHub\GitHubEntry\app\build\intermediates\pre-dexed\debug\classes-b2a7f2fb9da87b12e2d2884d9e82fc32f8a5d751.jar" />
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-6321089df7d296871bf84e0989acc0ce20e1dfed.jar" />
+    </item>
+    <item
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-4c14a2e892d330dc37b319c65cb0c08a300228aa.jar" />
+    </item>
+    <item
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-062d2188d6b8d2576149d17ef383ee18a68caec4.jar" />
+    </item>
+    <item
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-fb3f0c0ec5c9a81e761aa17fe3eb02e1a7509410.jar" />
+    </item>
+    <item
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b36f30ac5ee5d5214f4b1e2ac49f11889d58e71a">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-3fb78a15de4699488c4e49610ce7b4e6fb9f13ee.jar" />
+    </item>
+    <item
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-cbdc04b105e07049bf2ad695ff1d3407cd5d27ba.jar" />
+    </item>
+    <item
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-049c5132e0bbb6cde637356828a16f8d4f74b076.jar" />
+    </item>
+    <item
+        jar="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
+        <dex dex="C:\Users\liuju\Desktop\GitHubEntry-latest\app\build\intermediates\pre-dexed\debug\classes-644ad49ceb65017b77c54e4c9d63e1460e5feb9d.jar" />
     </item>
 
 </items>
