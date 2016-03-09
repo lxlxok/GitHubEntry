@@ -50,6 +50,9 @@ public class AuthActivity extends AccountAuthenticatorActivity {
         accountManager = AccountManager.get(getBaseContext());
 
         String accountName = getIntent().getStringExtra("ACCOUNT_NAME");
+
+
+
         authTokenType = getIntent().getStringExtra("AUTH_TYPE");
         if (authTokenType == null) {
             authTokenType = StasticAccount.AUTHTOKEN_TYPE_FULL_ACCESS;

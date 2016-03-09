@@ -2,11 +2,13 @@ package gitluck.com.githubentry.AccountManager;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;
+import android.accounts.AccountManagerCallback;
 import android.accounts.AccountManagerFuture;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 
 /**
  * Created by xiao on 3/7/16.
@@ -16,6 +18,9 @@ public class GithubAccount {
     public final AccountManager accountManager;  //
     public volatile static GithubAccount instance;
     public  Context context; //
+    public String authToken = null;
+
+    public static final String TAG = "TAGTAGGithubAccount";
 
     // singleton model
     public  static GithubAccount getInstance(Context context) {
@@ -52,14 +57,5 @@ public class GithubAccount {
     public void cancleToken(String token) {
         accountManager.invalidateAuthToken("com.githubentry", token);
     }
-
-    /*
-
-    public String getAccountToken() {
-        final AccountManagerFuture<Bundle> accountManagerFuture = accountManager.getAuthToken(account,"com.githubentry", null, context, null, null);
-
-
-    }
-    */
 
 }

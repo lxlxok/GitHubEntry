@@ -8,8 +8,8 @@
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -28,23 +28,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:label="Log In"
             android:name=".AuthActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Log In"
             android:screenOrientation="portrait" >
         </activity>
 
-        <service
-            android:name=".AccountManager.GithubAccountService">
+        <service android:name=".AccountManager.GithubAccountService" >
             <intent-filter>
-                <action android:name="android.accounts.AccountAuthenticator"/>
+                <action android:name="android.accounts.AccountAuthenticator" />
             </intent-filter>
+
             <meta-data
                 android:name="android.accounts.AccountAuthenticator"
                 android:resource="@xml/authenticator" />
         </service>
 
         <activity android:name=".TestTokenActivity" >
+        </activity>
+        <activity android:name=".UserActivity" >
         </activity>
     </application>
 

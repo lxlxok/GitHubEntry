@@ -5,6 +5,6 @@
                             android:key="isDebug"
                             android:summary="Connecting to debug server"/>
         <SwitchPreference   android:title="Debug logs"
-                            android:key = "logsverbose"
+                            android:key = "logsVerbose"
                             android:summary="show debug logs"/>
 </PreferenceScreen>

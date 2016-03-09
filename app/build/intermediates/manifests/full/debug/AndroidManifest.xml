@@ -59,6 +59,8 @@
 
         <activity android:name="gitluck.com.githubentry.TestTokenActivity" >
         </activity>
+        <activity android:name="gitluck.com.githubentry.UserActivity" >
+        </activity>
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

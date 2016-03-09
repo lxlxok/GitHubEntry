@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:2:1-51:12
+ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:2:1-53:12
 	package
 		ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:3:5-38
 		INJECTED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml
@@ -34,11 +34,11 @@ ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidMan
 	android:name
 		ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:10:22-69
 uses-permission#android.permission.USE_CREDENTIALS
-ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:11:5-73
+ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:11:5-74
 	android:name
 		ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:11:22-71
 uses-permission#android.permission.INTERNET
-ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:12:5-66
+ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:12:5-67
 MERGED from [com.google.android.gms:play-services-ads:8.4.0] /Users/xiao/AndroidStudioProjects/githubentry/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.4.0/AndroidManifest.xml:20:5-66
 MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/xiao/AndroidStudioProjects/githubentry/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/AndroidManifest.xml:21:5-67
 MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] /Users/xiao/AndroidStudioProjects/githubentry/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/8.4.0/AndroidManifest.xml:19:5-67
@@ -52,7 +52,7 @@ MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/xiao/Androi
 	android:name
 		ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:12:22-64
 application
-ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:14:5-49:19
+ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:14:5-51:19
 MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/xiao/AndroidStudioProjects/githubentry/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] /Users/xiao/AndroidStudioProjects/githubentry/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:23.1.1] /Users/xiao/AndroidStudioProjects/githubentry/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/AndroidManifest.xml:22:5-20
@@ -187,21 +187,21 @@ ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidMan
 	android:screenOrientation
 		ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:34:13-49
 	android:label
-		ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:31:13-35
+		ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:33:13-35
 	android:configChanges
-		ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:33:13-74
+		ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:32:13-74
 	android:name
-		ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:32:13-41
+		ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:31:13-41
 service#gitluck.com.githubentry.AccountManager.GithubAccountService
 ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:37:9-45:19
 	android:name
-		ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:38:13-64
+		ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:37:18-69
 intent-filter#android.accounts.AccountAuthenticator
-ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:39:13-41:29
+ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:38:13-40:29
 action#android.accounts.AccountAuthenticator
-ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:40:17-79
+ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:39:17-80
 	android:name
-		ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:40:25-77
+		ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:39:25-77
 meta-data#android.accounts.AccountAuthenticator
 ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:42:13-44:57
 	android:resource
@@ -212,6 +212,10 @@ activity#gitluck.com.githubentry.TestTokenActivity
 ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:47:9-48:20
 	android:name
 		ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:47:19-52
+activity#gitluck.com.githubentry.UserActivity
+ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:49:9-50:20
+	android:name
+		ADDED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml:49:19-47
 uses-sdk
 INJECTED from /Users/xiao/AndroidStudioProjects/githubentry/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/xiao/AndroidStudioProjects/githubentry/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:20:5-43
