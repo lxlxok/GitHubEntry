@@ -1,161 +1,156 @@
 package gitluck.com.githubentry;
 
-
-
-import android.graphics.Color;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
+import android.accounts.AccountManager;
+import android.accounts.AccountManagerCallback;
+import android.accounts.AccountManagerFuture;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Looper;
+import android.os.Message;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.util.Log;
-import android.view.Display;
-import android.view.ViewGroup;
-import android.view.ViewGroup.LayoutParams;
-import android.view.Window;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.view.View;
 import android.widget.TextView;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
-import org.w3c.dom.Text;
 
-import okhttp3.OkHttpClient;
-import okhttp3.logging.HttpLoggingInterceptor;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.GsonConverterFactory;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.http.GET;
+import org.xml.sax.helpers.LocatorImpl;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.logging.Handler;
 
-public class MainActivity extends FragmentActivity {
+import gitluck.com.githubentry.AccountManager.StasticAccount;
 
-    private ImageView mTabline;
-    private int mTabline_size;
 
-    private ViewPager viewPager;
-    private TextView chatTextView;
-    private TextView friendTextView;
-    private TextView contactTextView;
-    private List<Fragment> data;
-    //Google建议，Fragement同ViewPager使用时，使用FragmentPagerAdapter适配器。
-    private FragmentPagerAdapter fragmentPagerAdapter;
+public class MainActivity extends AppCompatActivity {
 
-    private int currentPageIndex;
+
+    public class MainHandler extends android.os.Handler {
+        public MainHandler() {
+
+        }
+
+        public MainHandler(Looper L) {
+            super(L);
+        }
+
+        @Override
+        public void handleMessage(Message msg) {
+            switch(msg.what) {
+                case 88:
+                    if (MainActivity.authToken != null) {
+                        SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(MainActivity.this.getApplicationContext());
+                        SharedPreferences.Editor editor = settings.edit();
+                        editor.putString("token", authToken);
+                        editor.commit();
+
+                        Intent intent = new Intent(MainActivity.this, UserActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                    break;
+            }
+        }
+
+    }
+
+
+    public AccountManager accountManager;
+    public static final String TAG = "TAGTAG MainActivity";
+    public static String authToken = null;
+    public  MainHandler mainHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        //requestWindowFeature(Window.FEATURE_NO_TITLE);
+        Log.i(TAG,"create");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mainHandler = new MainHandler();
 
-        initTabline();
-        initView();
-        Log.e("TAG", "End of onCreate");
+        accountManager = accountManager.get(this);
+        getTokenFromAccount(StasticAccount.ACCOUNT_TYPE, StasticAccount.AUTHTOKEN_TYPE_FULL_ACCESS);
+
     }
 
-    private void initTabline() {
-        mTabline = (ImageView) findViewById(R.id.id_iv_tabline);
-        Display display = getWindow().getWindowManager().getDefaultDisplay();
-        DisplayMetrics displayMetrics = new DisplayMetrics();
-        display.getMetrics(displayMetrics);
-        mTabline_size = displayMetrics.widthPixels / 3;
-        LayoutParams layoutParams = mTabline.getLayoutParams();
-        layoutParams.width = mTabline_size;
-        mTabline.setLayoutParams(layoutParams);
+
+    public void test(View view) {
+       // TextView view = (TextView)findViewById(R.id.token);
+       // view.setText("token = " + authToken);
+        Log.i(TAG, "testToken = " + authToken);
+        if (authToken != null) {
+            SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
+            SharedPreferences.Editor editor = settings.edit();
+            editor.putString("token", authToken);
+            editor.commit();
+        } else {
+            getTokenFromAccount(StasticAccount.ACCOUNT_TYPE, StasticAccount.AUTHTOKEN_TYPE_FULL_ACCESS);
+        }
+
+
     }
 
-    private void initView() {
-        viewPager = (ViewPager) findViewById(R.id.id_viewpager);
-        chatTextView = (TextView) findViewById(R.id.id_tv_chat);
-        friendTextView = (TextView) findViewById(R.id.id_tv_friend);
-        contactTextView = (TextView) findViewById(R.id.id_tv_contact);
 
-        /**
-         * List<Fragment>
-         * 利用之前定义的三个Fragment，更新数据源。
-         */
-        data = new ArrayList<Fragment>();
-        ChatMainTabFragment tab01 = new ChatMainTabFragment();
-        FriendMainTabFragment tab02 = new FriendMainTabFragment();
-        ContactMainTabFragment tab03 = new ContactMainTabFragment();
-        data.add(tab01);
-        data.add(tab02);
-        data.add(tab03);
 
-        /**
-         * 创建Adapter：
-         * 这里使用FragmentPagerAdapter.
-         * 通过重写getItem getCount方法，将该适配器同我们的数据源 data=List<Framgent> 建立了联系。
-         */
-        fragmentPagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
+    // start login activity
+    protected void login() {
+        Intent intent = new Intent(this, TestTokenActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+
+
+    public void getTokenFromAccount(String accountType, String authTokenType) {
+        final AccountManagerFuture<Bundle> future = accountManager.getAuthTokenByFeatures(accountType, authTokenType, null, this, null, null, new AccountManagerCallback<Bundle>() {
             @Override
-            public Fragment getItem(int position) {
-                return data.get(position);
-            }
+            public void run(AccountManagerFuture<Bundle> future) {
+                Bundle bundle = null;
+                try {
+                    bundle = future.getResult();
+                    final String token = bundle.getString(AccountManager.KEY_AUTHTOKEN);
+                    if (token != null) {
+                        Log.i(TAG, "token" + token);
+                        MainActivity.authToken = token;
 
-            @Override
-            public int getCount() {
-                return data.size();
-            }
-        };
+                        // send message to MainActivity to notify that token have been got
+                        Message msg = new Message();
+                        msg.what = 88;
+                        MainActivity.this.mainHandler.sendMessage(msg);
 
-        /**
-         * 将适配器，添加进viewPager中。 viewPager可以看作是view的容器。
-         * 通过该适配器，将viewPager（view）同数据源建立了联系。
-         */
-        viewPager.setAdapter(fragmentPagerAdapter);
+                    } else {
+                        Log.i(TAG, "token = null");
+                    }
 
-        /**
-         * 设置viewPager的监听，
-         * 实现tabline的同步效果。
-         */
-        viewPager.addOnPageChangeListener(new OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                //Log.e("TAG", position + ", " + positionOffset + ", " + positionOffsetPixels);
-                LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) mTabline.getLayoutParams();
-                if (currentPageIndex == position) { // from left to right
-                    layoutParams.leftMargin = (int)(currentPageIndex * mTabline_size + positionOffset * mTabline_size);
-                } else if (currentPageIndex == position + 1) { // currentPageIndex > position means from right to left
-                    layoutParams.leftMargin = (int)(currentPageIndex * mTabline_size + (positionOffset - 1) * mTabline_size);
+                } catch (Exception ex) {
+
                 }
-                mTabline.setLayoutParams(layoutParams);
             }
-
-            @Override
-            public void onPageSelected(int position) {
-                resetTextView();
-                switch (position) {
-                    case 0:
-                        chatTextView.setTextColor(Color.parseColor("#008000"));
-                        break;
-                    case 1:
-                        friendTextView.setTextColor(Color.parseColor("#008000"));
-                        break;
-                    case 2:
-                        contactTextView.setTextColor(Color.parseColor("#008000"));
-                        break;
-                }
-                currentPageIndex = position;
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
-            }
-        });
+        },null);
     }
 
-    protected void resetTextView() {
-        chatTextView.setTextColor(Color.BLACK);
-        friendTextView.setTextColor(Color.BLACK);
-        contactTextView.setTextColor(Color.BLACK);
+/*
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Log.i(TAG,"resume");
+
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i(TAG,"stop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i(TAG,"destroy");
+
+    }
+*/
 
 }

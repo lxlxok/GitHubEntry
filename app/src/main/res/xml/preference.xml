@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory android:title="githubentry Preference" />
+        <CheckBoxPreference android:title="debug server"
+                            android:key="isDebug"
+                            android:summary="Connecting to debug server"/>
+        <SwitchPreference   android:title="Debug logs"
+                            android:key = "logsVerbose"
+                            android:summary="show debug logs"/>
+</PreferenceScreen>
