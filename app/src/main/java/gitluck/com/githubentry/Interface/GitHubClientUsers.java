@@ -25,7 +25,7 @@ public interface GitHubClientUsers {
     Call<User> getUser(@Path("user") String user);
 
     @GET("/user")
-    Call<User> authrizedUser();
+    Call<User> authrizedUser(@Header("authorization") String authorization);
 
     // token api
     @GET("authorizations")
