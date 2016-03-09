@@ -162,31 +162,6 @@ public class AuthActivity extends AccountAuthenticatorActivity {
     }
 
 
-    public void testUser() {
-        GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
-        Call<User> call = userService.authrizedUser();
-        call.enqueue(new Callback<User>() {
-            @Override
-            public void onResponse(Response<User> response) {
-                if (response.isSuccess()) {
-                    Log.i(TAG, "response code is" + response.code());
-
-                } else {
-
-                    Log.i(TAG, "response failed");
-                    Log.i(TAG, "response code is" + response.code());
-
-                }
-            }
-
-            @Override
-            public void onFailure(Throwable t) {
-
-            }
-        });
-    }
-
-
     public void requestServer() {
         GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
         Call<User> call = userService.getUser("lxlxok");
