@@ -22,6 +22,7 @@ public class UserActivity extends AppCompatActivity {
 
     }
 
+    /*
     @Override
     protected void onResume() {
         super.onResume();
@@ -40,5 +41,7 @@ public class UserActivity extends AppCompatActivity {
         Log.i(TAG,"destroy");
 
     }
+
+    */
 
 }

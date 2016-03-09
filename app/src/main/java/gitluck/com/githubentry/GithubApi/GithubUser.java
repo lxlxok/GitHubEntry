@@ -3,7 +3,6 @@ package gitluck.com.githubentry.GithubApi;
 import android.content.Context;
 import android.util.Log;
 
-import gitluck.com.githubentry.AccountManager.GithubAccount;
 import gitluck.com.githubentry.Interface.GitHubClientUsers;
 import gitluck.com.githubentry.ServiceGenerator;
 import gitluck.com.githubentry.response.User;
