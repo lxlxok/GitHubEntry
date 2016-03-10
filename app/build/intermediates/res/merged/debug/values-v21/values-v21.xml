@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/Users/xiao/AndroidStudioProjects/githubentry/app/src/main/res/values-v21/atts.xml -->
+    <eat-comment/>
+    <declare-styleable name="Topbar">
+        <attr format="string" name="mytitle"/>
+        <attr format="dimension" name="mytitleTextSize"/>
+        <attr format="color" name="mytitleTextColor"/>
+        <attr format="color" name="leftTextColor"/>
+        <attr format="reference|color" name="leftBackground"/>
+        <attr format="string" name="leftText"/>
+        <attr format="dimension" name="leftTextSize"/>
+        <attr format="color" name="rightTextColor"/>
+        <attr format="reference|color" name="rightBackground"/>
+        <attr format="string" name="rightText"/>
+        <attr format="dimension" name="rightTextSize"/>
+    </declare-styleable>
     <!-- From: file:/Users/xiao/AndroidStudioProjects/githubentry/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values-v21/values-v21.xml -->
     <eat-comment/>
     <dimen name="design_navigation_padding_top_default">24dp</dimen>
