@@ -162,34 +162,5 @@ public class AuthActivity extends AccountAuthenticatorActivity {
     }
 
 
-    public void requestServer() {
-        GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
-        Call<User> call = userService.getUser("lxlxok");
-        /*
-        try {
-            Response<User> response = call.execute();
-            //Log.i(TAG, "Body is = " + serveruser.getName());
-        } catch (IOException ex) {
-            Log.i(TAG, "error IOException");
-            ex.printStackTrace();
-        }
-        */
-        call.enqueue(new Callback<User>() {
-            @Override
-            public void onResponse(Response<User> response) {
-                if (response.isSuccess()) {
-                    Log.i(TAG, "Body is" + response.body().getName());
-                } else {
 
-                }
-            }
-
-            @Override
-            public void onFailure(Throwable t) {
-
-            }
-        });
-
-
-    }
 }

@@ -40,6 +40,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 
+
 public class UserActivity extends FragmentActivity {
     public String token;
     public static final String TAG = "TAGTAG UserActivity";
@@ -62,6 +63,19 @@ public class UserActivity extends FragmentActivity {
     private ListView leftDrawer;
     private Context context;
 
+    // the user related variable
+
+    public String username;
+    public String Realname;
+    public String email;
+    public String location;
+    public String company;
+
+    public int followerNUm;
+    public int followingNum;
+    public int reposNum;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -71,7 +85,7 @@ public class UserActivity extends FragmentActivity {
         SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this.getApplicationContext());
         token = settings.getString("token", "");
         Log.i(TAG, "user token =" + token);
-        testUser();
+        aboutUser();
 
 
 
@@ -193,12 +207,15 @@ public class UserActivity extends FragmentActivity {
                         break;
                     case 1:
                         repoTextView.setTextColor(Color.parseColor("#008000"));
+
                         break;
                     case 2:
                         followerTextView.setTextColor(Color.parseColor("#008000"));
+                        getFollower();
                         break;
                     case 3:
                         followingTextView.setTextColor(Color.parseColor("#008000"));
+                        getFollowing();
                         break;
                 }
                 currentPageIndex = position;
@@ -220,16 +237,25 @@ public class UserActivity extends FragmentActivity {
     }
 
 
-    public void testUser() {
+
+    public void aboutUser() {
         GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
         Call<User> call = userService.authrizedUser("token "+token);
         call.enqueue(new Callback<User>() {
             @Override
             public void onResponse(Response<User> response) {
                 if (response.isSuccess()) {
-                    Log.i(TAG, "response code is" + response.code());
+                    username = response.body().getLogin();
+                    Realname = response.body().getName();
+                    email = response.body().getEmail();
+                    location = response.body().getLocation();
+                    company = response.body().getCompany();
+                    followerNUm = response.body().getFollowers();
+                    followingNum = response.body().getFollowing();
+                    reposNum = response.body().getPublicRepos();
 
-                    Log.i(TAG, "response body is" + response.body().getFollowers());
+                    Log.i(TAG, "response code is" + response.code());
+                    Log.i(TAG, "response username is" + response.body().getLogin());
 
                 } else {
 
@@ -247,25 +273,21 @@ public class UserActivity extends FragmentActivity {
     }
 
 
-    public void requestServer() {
+    public void getFollower() {
         GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
-        Call<User> call = userService.getUser("lxlxok");
-        /*
-        try {
-            Response<User> response = call.execute();
-            //Log.i(TAG, "Body is = " + serveruser.getName());
-        } catch (IOException ex) {
-            Log.i(TAG, "error IOException");
-            ex.printStackTrace();
-        }
-        */
-        call.enqueue(new Callback<User>() {
+        Call <List<User>> call = userService.follower("token " + token, username, "1");
+        call.enqueue(new Callback<List<User>>() {
             @Override
-            public void onResponse(Response<User> response) {
+            public void onResponse(Response<List<User>> response) {
                 if (response.isSuccess()) {
-                    Log.i(TAG, "Body is" + response.body().getName());
-                } else {
+                    Log.i(TAG, "response success code is" + response.code());
+                    for (int i = 0; i < response.body().size(); i++) {
+                        Log.i(TAG, "login = " + response.body().get(i).getLogin());
 
+                    }
+                } else {
+                    Log.i(TAG, "response failed");
+                    Log.i(TAG, "response failed code is" + response.code());
                 }
             }
 
@@ -275,8 +297,36 @@ public class UserActivity extends FragmentActivity {
             }
         });
 
+    }
+
+    public void getFollowing() {
+        GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
+        Call <List<User>> call = userService.follwering("token " + token, username, "1");
+        call.enqueue(new Callback<List<User>>() {
+            @Override
+            public void onResponse(Response<List<User>> response) {
+                if (response.isSuccess()) {
+                    Log.i(TAG, "response success code is" + response.code());
+                    for (int i = 0; i < response.body().size(); i++) {
+                        Log.i(TAG, "login = " + response.body().get(i).getLogin());
+
+                    }
+                } else {
+                    Log.i(TAG, "response failed");
+                    Log.i(TAG, "response failed code is" + response.code());
+                }
+            }
+
+            @Override
+            public void onFailure(Throwable t) {
+
+            }
+        });
 
     }
+
+
+
 
 
     /*

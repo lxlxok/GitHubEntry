@@ -27,12 +27,15 @@ import android.widget.AdapterView;
  */
 public class NewsMainTabFragment extends Fragment {
 
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         Log.e("TAG","显示聊天");
         View view =  inflater.inflate(R.layout.tab01, container, false);
-        ListView lv = (ListView) view.findViewById(R.id.id_lv_chat);
+        ListView lv = (ListView) view.findViewById(R.id.id_lv_chat1);
+
+
         lv.setAdapter(new MyAdapter(getContext(), getDatas()));
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

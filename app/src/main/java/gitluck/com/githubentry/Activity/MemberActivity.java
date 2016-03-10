@@ -216,6 +216,74 @@ public class MemberActivity extends FragmentActivity {
 
 
 
+/*
+
+    public void aboutUser() {
+        GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
+        Call<User> call = userService.authrizedUser("token "+token);
+        call.enqueue(new Callback<User>() {
+            @Override
+            public void onResponse(Response<User> response) {
+                if (response.isSuccess()) {
+                    username = response.body().getLogin();
+                    Realname = response.body().getName();
+                    email = response.body().getEmail();
+                    location = response.body().getLocation();
+                    company = response.body().getCompany();
+                    followerNUm = response.body().getFollowers();
+                    followingNum = response.body().getFollowing();
+                    reposNum = response.body().getPublicRepos();
+
+                    Log.i(TAG, "response code is" + response.code());
+                    Log.i(TAG, "response username is" + response.body().getLogin());
+
+                } else {
+
+                    Log.i(TAG, "response failed");
+                    Log.i(TAG, "response code is" + response.code());
+
+                }
+            }
+
+            @Override
+            public void onFailure(Throwable t) {
+
+            }
+        });
+    }
+
+
+
+
+
+
+
+    public void getUser() {
+        GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
+        Call<User> call = userService.getUser("lxlxok");
+
+        call.enqueue(new Callback<User>() {
+            @Override
+            public void onResponse(Response<User> response) {
+                if (response.isSuccess()) {
+                    Log.i(TAG, "Body is" + response.body().getName());
+                } else {
+
+                }
+            }
+
+            @Override
+            public void onFailure(Throwable t) {
+
+            }
+        });
+
+
+    }
+
+
+
+*/
 
 
     /*
