@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.BaseAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -23,6 +24,7 @@ import gitluck.com.githubentry.R;
  * Created by Administrator on 2/27/2016.
  */
 public class RepoMainTabFragment extends Fragment {
+
 
 
     @Nullable

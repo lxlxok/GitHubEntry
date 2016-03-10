@@ -34,6 +34,7 @@ import gitluck.com.githubentry.Fragment.NewsMainTabFragment;
 import gitluck.com.githubentry.Fragment.RepoMainTabFragment;
 import gitluck.com.githubentry.Fragment.FollowerMainTabFragment;
 import gitluck.com.githubentry.Interface.GitHubClientUsers;
+import gitluck.com.githubentry.response.Repository;
 import gitluck.com.githubentry.response.User;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -207,7 +208,7 @@ public class UserActivity extends FragmentActivity {
                         break;
                     case 1:
                         repoTextView.setTextColor(Color.parseColor("#008000"));
-
+                        getRepos();
                         break;
                     case 2:
                         followerTextView.setTextColor(Color.parseColor("#008000"));
@@ -271,6 +272,42 @@ public class UserActivity extends FragmentActivity {
             }
         });
     }
+
+
+
+    public void getRepos() {
+        GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
+        Call <List<Repository>> call = userService.userRepos("token " + token, username, "1");
+        call.enqueue(new Callback<List<Repository>>() {
+            @Override
+            public void onResponse(Response<List<Repository>> response) {
+                if (response.isSuccess()) {
+                    Log.i(TAG, "response success code is" + response.code());
+                    for (int i = 0; i < response.body().size(); i++) {
+                        Log.i(TAG, "login = " + response.body().get(i).getName());
+                        Log.i(TAG, "login = " + response.body().get(i).getDescription());
+                        Log.i(TAG, "login = " + response.body().get(i).getPrivate()); //boolean
+                        Log.i(TAG, "login = " + response.body().get(i).getFork()); //boolean
+                        Log.i(TAG, "login = " + response.body().get(i).getForksCount()); //int
+                        Log.i(TAG, "login = " + response.body().get(i).getWatchersCount()); //int
+                        Log.i(TAG, "login = " + response.body().get(i).getStargazersCount()); //int
+                        Log.i(TAG, "login = " + response.body().get(i).getLanguage());
+
+                    }
+                } else {
+                    Log.i(TAG, "response failed");
+                    Log.i(TAG, "response failed code is" + response.code());
+                }
+            }
+
+            @Override
+            public void onFailure(Throwable t) {
+
+            }
+        });
+
+    }
+
 
 
     public void getFollower() {
