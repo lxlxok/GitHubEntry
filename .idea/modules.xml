@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/GitHubEntry.iml" filepath="$PROJECT_DIR$/GitHubEntry.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/githubentry.iml" filepath="$PROJECT_DIR$/githubentry.iml" />
     </modules>
   </component>
 </project>

@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import gitluck.com.githubentry.Bean.ItemBean;
 import gitluck.com.githubentry.Bean.ItemRepos;
 import gitluck.com.githubentry.R;
 

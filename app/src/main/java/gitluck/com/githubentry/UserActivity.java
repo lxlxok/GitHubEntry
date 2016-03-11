@@ -26,7 +26,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import gitluck.com.githubentry.Activity.MemberActivity;
-import gitluck.com.githubentry.Activity.SettingActivity;
 import gitluck.com.githubentry.Adapter.FollowerAdapter;
 import gitluck.com.githubentry.Adapter.FollowingAdapter;
 import gitluck.com.githubentry.Adapter.MenuAdapter;
@@ -341,8 +340,8 @@ public class UserActivity extends FragmentActivity {
                     for (int i = 0; i < response.body().size(); i++) {
                         Log.i(TAG, "login = " + response.body().get(i).getLogin());
 
-
-                        listFollowers.add(new ItemFollowers(response.body().get(i).getAvatarUrl(),response.body().get(i).getLogin()));
+                        Log.i(TAG, "testURLof getfollower" + response.body().get(i).getAvatarUrl());
+                        listFollowers.add(new ItemFollowers(response.body().get(i).getAvatarUrl(), response.body().get(i).getLogin()));
                         followerAdapter.notifyDataSetChanged();
 
                     }
@@ -371,7 +370,7 @@ public class UserActivity extends FragmentActivity {
                     for (int i = 0; i < response.body().size(); i++) {
                         Log.i(TAG, "login = " + response.body().get(i).getLogin());
 
-
+                        Log.i(TAG, "testURLof getfollowing" + response.body().get(i).getAvatarUrl());
                         listFollowings.add(new ItemFollowing(response.body().get(i).getAvatarUrl(), response.body().get(i).getLogin()));
                         followingAdapter.notifyDataSetChanged();
 

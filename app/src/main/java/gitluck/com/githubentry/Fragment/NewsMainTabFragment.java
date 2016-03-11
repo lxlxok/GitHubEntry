@@ -11,16 +11,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import gitluck.com.githubentry.Activity.MemberActivity;
-import gitluck.com.githubentry.Adapter.MyAdapter;
-import gitluck.com.githubentry.Bean.ItemBean;
+import gitluck.com.githubentry.Adapter.AboutAdapter;
+import gitluck.com.githubentry.Bean.ItemAbout;
 import gitluck.com.githubentry.R;
-import android.widget.AdapterView;
 
 /**
  * Created by Administrator on 2/27/2016.
@@ -36,7 +34,7 @@ public class NewsMainTabFragment extends Fragment {
         ListView lv = (ListView) view.findViewById(R.id.id_lv_chat1);
 
 
-        lv.setAdapter(new MyAdapter(getContext(), getDatas()));
+        lv.setAdapter(new AboutAdapter(getContext(), getDatas(), lv));
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -49,11 +47,11 @@ public class NewsMainTabFragment extends Fragment {
         return view;
     }
 
-    private List<ItemBean> getDatas() {
-        List<ItemBean> mDatas = new ArrayList<>();
+    private List<ItemAbout> getDatas() {
+        List<ItemAbout> mDatas = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
-            mDatas.add(new ItemBean(
-                    R.mipmap.ic_launcher,
+            mDatas.add(new ItemAbout(
+                    "https://avatars.githubusercontent.com/u/23469?v=3",
                     "Title" + i,
                     "Content" + i
             ));

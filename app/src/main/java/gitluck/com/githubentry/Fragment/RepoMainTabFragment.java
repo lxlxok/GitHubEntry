@@ -9,17 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.BaseAdapter;
 import android.widget.ListView;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import gitluck.com.githubentry.Activity.MemberActivity;
-import gitluck.com.githubentry.Adapter.MyAdapter;
 import gitluck.com.githubentry.Adapter.ReposAdapter;
-import gitluck.com.githubentry.Bean.ItemBean;
-import gitluck.com.githubentry.Bean.ItemRepos;
 import gitluck.com.githubentry.R;
 import gitluck.com.githubentry.UserActivity;
 
