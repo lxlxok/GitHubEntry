@@ -27,8 +27,12 @@ import java.util.List;
 
 import gitluck.com.githubentry.Activity.MemberActivity;
 import gitluck.com.githubentry.Activity.SettingActivity;
+import gitluck.com.githubentry.Adapter.FollowerAdapter;
+import gitluck.com.githubentry.Adapter.FollowingAdapter;
 import gitluck.com.githubentry.Adapter.MenuAdapter;
 import gitluck.com.githubentry.Adapter.ReposAdapter;
+import gitluck.com.githubentry.Bean.ItemFollowers;
+import gitluck.com.githubentry.Bean.ItemFollowing;
 import gitluck.com.githubentry.Bean.ItemMenu;
 import gitluck.com.githubentry.Bean.ItemRepos;
 import gitluck.com.githubentry.Fragment.FollowingMainTabFragment;
@@ -80,6 +84,13 @@ public class UserActivity extends FragmentActivity {
 
     public static List<ItemRepos> listRepos = new ArrayList<ItemRepos>();
     public static ReposAdapter reposAdapter;
+
+    public static List<ItemFollowing> listFollowings = new ArrayList<ItemFollowing>();
+    public static FollowingAdapter followingAdapter;
+
+    public static List<ItemFollowers> listFollowers = new ArrayList<ItemFollowers>();
+    public static FollowerAdapter followerAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -300,7 +311,7 @@ public class UserActivity extends FragmentActivity {
                         Log.i(TAG, "login = " + response.body().get(i).getLanguage());
 
                         listRepos.add(new ItemRepos(R.mipmap.ic_launcher,response.body().get(i).getName(),response.body().get(i).getDescription()));
-                        listRepos.notifyAll();
+                        reposAdapter.notifyDataSetChanged();
 
                     }
                 } else {
@@ -330,6 +341,10 @@ public class UserActivity extends FragmentActivity {
                     for (int i = 0; i < response.body().size(); i++) {
                         Log.i(TAG, "login = " + response.body().get(i).getLogin());
 
+
+                        listFollowers.add(new ItemFollowers(response.body().get(i).getAvatarUrl(),response.body().get(i).getLogin()));
+                        followerAdapter.notifyDataSetChanged();
+
                     }
                 } else {
                     Log.i(TAG, "response failed");
@@ -355,6 +370,11 @@ public class UserActivity extends FragmentActivity {
                     Log.i(TAG, "response success code is" + response.code());
                     for (int i = 0; i < response.body().size(); i++) {
                         Log.i(TAG, "login = " + response.body().get(i).getLogin());
+
+
+                        listFollowings.add(new ItemFollowing(response.body().get(i).getAvatarUrl(), response.body().get(i).getLogin()));
+                        followingAdapter.notifyDataSetChanged();
+
 
                     }
                 } else {
