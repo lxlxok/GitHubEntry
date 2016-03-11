@@ -28,7 +28,9 @@ import java.util.List;
 import gitluck.com.githubentry.Activity.MemberActivity;
 import gitluck.com.githubentry.Activity.SettingActivity;
 import gitluck.com.githubentry.Adapter.MenuAdapter;
+import gitluck.com.githubentry.Adapter.ReposAdapter;
 import gitluck.com.githubentry.Bean.ItemMenu;
+import gitluck.com.githubentry.Bean.ItemRepos;
 import gitluck.com.githubentry.Fragment.FollowingMainTabFragment;
 import gitluck.com.githubentry.Fragment.NewsMainTabFragment;
 import gitluck.com.githubentry.Fragment.RepoMainTabFragment;
@@ -76,6 +78,8 @@ public class UserActivity extends FragmentActivity {
     public int followingNum;
     public int reposNum;
 
+    public static List<ItemRepos> listRepos = new ArrayList<ItemRepos>();
+    public static ReposAdapter reposAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,8 +91,6 @@ public class UserActivity extends FragmentActivity {
         token = settings.getString("token", "");
         Log.i(TAG, "user token =" + token);
         aboutUser();
-
-
 
         context = this;
         initTabline();
@@ -283,6 +285,10 @@ public class UserActivity extends FragmentActivity {
             public void onResponse(Response<List<Repository>> response) {
                 if (response.isSuccess()) {
                     Log.i(TAG, "response success code is" + response.code());
+
+                    // clean the listRepos
+                    listRepos.clear();
+
                     for (int i = 0; i < response.body().size(); i++) {
                         Log.i(TAG, "login = " + response.body().get(i).getName());
                         Log.i(TAG, "login = " + response.body().get(i).getDescription());
@@ -292,6 +298,9 @@ public class UserActivity extends FragmentActivity {
                         Log.i(TAG, "login = " + response.body().get(i).getWatchersCount()); //int
                         Log.i(TAG, "login = " + response.body().get(i).getStargazersCount()); //int
                         Log.i(TAG, "login = " + response.body().get(i).getLanguage());
+
+                        listRepos.add(new ItemRepos(R.mipmap.ic_launcher,response.body().get(i).getName(),response.body().get(i).getDescription()));
+                        listRepos.notifyAll();
 
                     }
                 } else {

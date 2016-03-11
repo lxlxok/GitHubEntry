@@ -11,6 +11,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import gitluck.com.githubentry.Bean.ItemBean;
+import gitluck.com.githubentry.Bean.ItemRepos;
 import gitluck.com.githubentry.R;
 
 /**
@@ -19,9 +20,9 @@ import gitluck.com.githubentry.R;
 public class ReposAdapter extends BaseAdapter {
 
     private LayoutInflater mLayoutInflater;
-    private List<ItemBean> mDataList;
+    private List<ItemRepos> mDataList;
 
-    public ReposAdapter(Context context, List<ItemBean> mDataList) {
+    public ReposAdapter(Context context, List<ItemRepos> mDataList) {
         mLayoutInflater =  LayoutInflater.from(context);
         this.mDataList = mDataList;
     }
@@ -55,12 +56,12 @@ public class ReposAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) convertView.getTag();
         }
         // get the Bean Object
-        ItemBean itemBean = mDataList.get(position);
+        ItemRepos itemRepos = mDataList.get(position);
 
         // set the data
-        viewHolder.img.setImageResource(itemBean.itemImageResid);
-        viewHolder.title.setText(itemBean.itemTitle);
-        viewHolder.content.setText(itemBean.itemContent);
+        viewHolder.img.setImageResource(itemRepos.itemImageResid);
+        viewHolder.title.setText(itemRepos.itemTitle);
+        viewHolder.content.setText(itemRepos.itemContent);
         return convertView;
     }
 
