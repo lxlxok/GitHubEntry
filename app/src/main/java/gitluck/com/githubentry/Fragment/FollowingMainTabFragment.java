@@ -19,6 +19,8 @@ import gitluck.com.githubentry.Adapter.AboutAdapter;
 import gitluck.com.githubentry.Adapter.FollowerAdapter;
 import gitluck.com.githubentry.Adapter.FollowingAdapter;
 import gitluck.com.githubentry.Bean.ItemAbout;
+import gitluck.com.githubentry.Bean.ItemFollowers;
+import gitluck.com.githubentry.Bean.ItemFollowing;
 import gitluck.com.githubentry.R;
 import gitluck.com.githubentry.UserActivity;
 
@@ -36,6 +38,7 @@ public class FollowingMainTabFragment extends Fragment {
             Log.e("TAG","显示好友");
             View view =  inflater.inflate(R.layout.tab04, container, false);
             ListView lv = (ListView) view.findViewById(R.id.id_lv_chat4);
+            UserActivity.listFollowings.add(new ItemFollowing("https://avatars.githubusercontent.com/u/23469?v=3", "loading"));
             UserActivity.followingAdapter = new FollowingAdapter(this.getContext(), UserActivity.listFollowings, lv);
             lv.setAdapter(UserActivity.followingAdapter);
             lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {

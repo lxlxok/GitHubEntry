@@ -23,4 +23,4 @@
         android:layout_centerHorizontal="true"
         android:onClick="test"/>
 </RelativeLayout>
-<!-- From: file:/C:/Users/liuju/Desktop/GitHubEntry/app/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/Users/xiao/AndroidStudioProjects/githubentry/app/src/main/res/layout/activity_main.xml -->

@@ -337,6 +337,7 @@ public class UserActivity extends FragmentActivity {
             public void onResponse(Response<List<User>> response) {
                 if (response.isSuccess()) {
                     Log.i(TAG, "response success code is" + response.code());
+                    listFollowers.clear();
                     for (int i = 0; i < response.body().size(); i++) {
                         Log.i(TAG, "login = " + response.body().get(i).getLogin());
 
@@ -366,6 +367,7 @@ public class UserActivity extends FragmentActivity {
             @Override
             public void onResponse(Response<List<User>> response) {
                 if (response.isSuccess()) {
+                    listFollowings.clear();
                     Log.i(TAG, "response success code is" + response.code());
                     for (int i = 0; i < response.body().size(); i++) {
                         Log.i(TAG, "login = " + response.body().get(i).getLogin());
