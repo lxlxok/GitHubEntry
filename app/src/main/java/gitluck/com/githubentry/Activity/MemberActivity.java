@@ -73,7 +73,6 @@ public class MemberActivity extends FragmentActivity {
 
         context = this;
         initTabline();
-        //initLeftMenu();
         initView();
     }
 
@@ -89,33 +88,6 @@ public class MemberActivity extends FragmentActivity {
         mTabline.setLayoutParams(layoutParams);
     }
 
-    private void initLeftMenu() {
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        leftDrawer = (ListView) findViewById(R.id.left_drawer);
-        menuList = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
-            menuList.add(new ItemMenu(
-                    R.mipmap.ic_launcher,
-                    "Title" + i
-            ));
-        }
-        MenuAdapter menuAdapter = new MenuAdapter(this, menuList);
-
-        menuAdapter.setOnMenuClickLisetener(new MenuAdapter.OnMenuClickLisetener() {
-            @Override
-            public void onMenuClick(int position) {
-                if (position != 3) {
-                    Log.e("TAG", position + "sdfsfsfsdfsfsdfsdfsf");
-                    Toast.makeText(getApplicationContext(), "Item Menu" + position, Toast.LENGTH_SHORT).show();
-                } else {
-                    Intent intent = new Intent(MemberActivity.this, SettingActivity.class);
-                    startActivity(intent);
-                }
-            }
-        });
-
-        leftDrawer.setAdapter(menuAdapter);
-    }
 
     private void initView() {
         viewPager = (ViewPager) findViewById(R.id.id_viewpager);
