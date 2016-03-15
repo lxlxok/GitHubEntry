@@ -6,7 +6,6 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="TAGTAG" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
@@ -40,54 +39,22 @@
       <file leaf-file-name="RepositoryActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Activity/RepositoryActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41666666">
-              <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+            <state vertical-scroll-proportion="1.2327273">
+              <caret line="134" column="28" selection-start-line="134" selection-start-column="28" selection-end-line="134" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2522#2533#0" expanded="true" />
+                <element signature="e#2736#2747#0" expanded="true" />
+                <element signature="e#2859#2871#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item_issue_list.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_issue_list.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="CommitsMainTabFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Fragment/CommitsMainTabFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.553571">
-              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RepoMainTabFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Fragment/RepoMainTabFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Issue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Issue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4074073">
-              <caret line="280" column="28" selection-start-line="280" selection-start-column="21" selection-end-line="280" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemIssue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Bean/ItemIssue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state vertical-scroll-proportion="-0.6666667">
+              <caret line="27" column="35" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -97,7 +64,17 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Interface/GitHubClientUsers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+              <caret line="57" column="39" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/ImageLoader/ImageLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -107,7 +84,17 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Fragment/IssuesMainTabFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="106" selection-start-line="40" selection-start-column="97" selection-end-line="40" selection-end-column="106" />
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FollowingMainTabFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Fragment/FollowingMainTabFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -1885,15 +1872,26 @@
         <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Bean/ItemAbout.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Fragment/NewsMainTabFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Fragment/CodeMainTabFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Fragment/CommitsMainTabFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/about_info_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/UserActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Fragment/RepoMainTabFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Interface/GitHubClientUsers.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Bean/ItemIssue.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Adapter/IssueAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Fragment/IssuesMainTabFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_issue_list.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Author.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Author_.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Commit.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Commit_.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Committer.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Committer_.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Parent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Tree.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_commit_list.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Bean/ItemIssue.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Bean/ItemCommit.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Adapter/CommitAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Fragment/CommitsMainTabFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Interface/GitHubClientUsers.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Activity/RepositoryActivity.java" />
       </list>
     </option>
@@ -1902,10 +1900,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="375" />
-    <option name="y" value="262" />
-    <option name="width" value="1315" />
-    <option name="height" value="803" />
+    <option name="x" value="108" />
+    <option name="y" value="31" />
+    <option name="width" value="1440" />
+    <option name="height" value="823" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -2054,28 +2052,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="githubentry" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GitHubEntry" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="githubentry" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="response" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2488,7 +2464,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="375" y="262" width="1315" height="803" extended-state="6" />
+    <frame x="108" y="31" width="1440" height="823" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2496,7 +2472,7 @@
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43085882" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14427157" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -2510,7 +2486,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26237234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23891273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907802" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -2563,385 +2539,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Activity/MemberActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Milestone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41512915">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1369#1370#0" expanded="false" />
-            <element signature="e#1395#1396#0" expanded="false" />
-            <element signature="e#1489#1490#0" expanded="false" />
-            <element signature="e#1519#1520#0" expanded="false" />
-            <element signature="e#1610#1611#0" expanded="false" />
-            <element signature="e#1640#1641#0" expanded="false" />
-            <element signature="e#1751#1752#0" expanded="false" />
-            <element signature="e#1789#1790#0" expanded="false" />
-            <element signature="e#1884#1885#0" expanded="false" />
-            <element signature="e#1916#1917#0" expanded="false" />
-            <element signature="e#2035#2036#0" expanded="false" />
-            <element signature="e#2077#2078#0" expanded="false" />
-            <element signature="e#2159#2160#0" expanded="false" />
-            <element signature="e#2184#2185#0" expanded="false" />
-            <element signature="e#2275#2276#0" expanded="false" />
-            <element signature="e#2303#2304#0" expanded="false" />
-            <element signature="e#2393#2394#0" expanded="false" />
-            <element signature="e#2422#2423#0" expanded="false" />
-            <element signature="e#2529#2530#0" expanded="false" />
-            <element signature="e#2565#2566#0" expanded="false" />
-            <element signature="e#2652#2653#0" expanded="false" />
-            <element signature="e#2680#2681#0" expanded="false" />
-            <element signature="e#2782#2783#0" expanded="false" />
-            <element signature="e#2816#2817#0" expanded="false" />
-            <element signature="e#2903#2904#0" expanded="false" />
-            <element signature="e#2931#2932#0" expanded="false" />
-            <element signature="e#3033#3034#0" expanded="false" />
-            <element signature="e#3067#3068#0" expanded="false" />
-            <element signature="e#3166#3167#0" expanded="false" />
-            <element signature="e#3200#3201#0" expanded="false" />
-            <element signature="e#3326#3327#0" expanded="false" />
-            <element signature="e#3372#3373#0" expanded="false" />
-            <element signature="e#3464#3465#0" expanded="false" />
-            <element signature="e#3494#3495#0" expanded="false" />
-            <element signature="e#3605#3606#0" expanded="false" />
-            <element signature="e#3643#3644#0" expanded="false" />
-            <element signature="e#3741#3742#0" expanded="false" />
-            <element signature="e#3774#3775#0" expanded="false" />
-            <element signature="e#3898#3899#0" expanded="false" />
-            <element signature="e#3942#3943#0" expanded="false" />
-            <element signature="e#4044#4045#0" expanded="false" />
-            <element signature="e#4079#4080#0" expanded="false" />
-            <element signature="e#4211#4212#0" expanded="false" />
-            <element signature="e#4259#4260#0" expanded="false" />
-            <element signature="e#4354#4355#0" expanded="false" />
-            <element signature="e#4386#4387#0" expanded="false" />
-            <element signature="e#4505#4506#0" expanded="false" />
-            <element signature="e#4547#4548#0" expanded="false" />
-            <element signature="e#4642#4643#0" expanded="false" />
-            <element signature="e#4674#4675#0" expanded="false" />
-            <element signature="e#4793#4794#0" expanded="false" />
-            <element signature="e#4835#4836#0" expanded="false" />
-            <element signature="e#4928#4929#0" expanded="false" />
-            <element signature="e#4959#4960#0" expanded="false" />
-            <element signature="e#5074#5075#0" expanded="false" />
-            <element signature="e#5114#5115#0" expanded="false" />
-            <element signature="e#5201#5202#0" expanded="false" />
-            <element signature="e#5229#5230#0" expanded="false" />
-            <element signature="e#5332#5333#0" expanded="false" />
-            <element signature="e#5366#5367#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Label.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76893204">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#476#477#0" expanded="false" />
-            <element signature="e#502#503#0" expanded="false" />
-            <element signature="e#596#597#0" expanded="false" />
-            <element signature="e#626#627#0" expanded="false" />
-            <element signature="e#711#712#0" expanded="false" />
-            <element signature="e#738#739#0" expanded="false" />
-            <element signature="e#836#837#0" expanded="false" />
-            <element signature="e#868#869#0" expanded="false" />
-            <element signature="e#955#956#0" expanded="false" />
-            <element signature="e#983#984#0" expanded="false" />
-            <element signature="e#1085#1086#0" expanded="false" />
-            <element signature="e#1119#1120#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/IssueUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6642066">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1589#1590#0" expanded="false" />
-            <element signature="e#1617#1618#0" expanded="false" />
-            <element signature="e#1719#1720#0" expanded="false" />
-            <element signature="e#1753#1754#0" expanded="false" />
-            <element signature="e#1835#1836#0" expanded="false" />
-            <element signature="e#1860#1861#0" expanded="false" />
-            <element signature="e#1951#1952#0" expanded="false" />
-            <element signature="e#1979#1980#0" expanded="false" />
-            <element signature="e#2074#2075#0" expanded="false" />
-            <element signature="e#2106#2107#0" expanded="false" />
-            <element signature="e#2225#2226#0" expanded="false" />
-            <element signature="e#2267#2268#0" expanded="false" />
-            <element signature="e#2364#2365#0" expanded="false" />
-            <element signature="e#2397#2398#0" expanded="false" />
-            <element signature="e#2520#2521#0" expanded="false" />
-            <element signature="e#2564#2565#0" expanded="false" />
-            <element signature="e#2647#2648#0" expanded="false" />
-            <element signature="e#2673#2674#0" expanded="false" />
-            <element signature="e#2767#2768#0" expanded="false" />
-            <element signature="e#2797#2798#0" expanded="false" />
-            <element signature="e#2888#2889#0" expanded="false" />
-            <element signature="e#2918#2919#0" expanded="false" />
-            <element signature="e#3029#3030#0" expanded="false" />
-            <element signature="e#3067#3068#0" expanded="false" />
-            <element signature="e#3168#3169#0" expanded="false" />
-            <element signature="e#3203#3204#0" expanded="false" />
-            <element signature="e#3334#3335#0" expanded="false" />
-            <element signature="e#3382#3383#0" expanded="false" />
-            <element signature="e#3483#3484#0" expanded="false" />
-            <element signature="e#3518#3519#0" expanded="false" />
-            <element signature="e#3649#3650#0" expanded="false" />
-            <element signature="e#3697#3698#0" expanded="false" />
-            <element signature="e#3790#3791#0" expanded="false" />
-            <element signature="e#3821#3822#0" expanded="false" />
-            <element signature="e#3936#3937#0" expanded="false" />
-            <element signature="e#3976#3977#0" expanded="false" />
-            <element signature="e#4073#4074#0" expanded="false" />
-            <element signature="e#4106#4107#0" expanded="false" />
-            <element signature="e#4229#4230#0" expanded="false" />
-            <element signature="e#4273#4274#0" expanded="false" />
-            <element signature="e#4382#4383#0" expanded="false" />
-            <element signature="e#4421#4422#0" expanded="false" />
-            <element signature="e#4733#4734#0" expanded="false" />
-            <element signature="e#4772#4773#0" expanded="false" />
-            <element signature="e#5068#5069#0" expanded="false" />
-            <element signature="e#5099#5100#0" expanded="false" />
-            <element signature="e#5214#5215#0" expanded="false" />
-            <element signature="e#5254#5255#0" expanded="false" />
-            <element signature="e#5349#5350#0" expanded="false" />
-            <element signature="e#5381#5382#0" expanded="false" />
-            <element signature="e#5500#5501#0" expanded="false" />
-            <element signature="e#5542#5543#0" expanded="false" />
-            <element signature="e#5653#5654#0" expanded="false" />
-            <element signature="e#5693#5694#0" expanded="false" />
-            <element signature="e#5988#5989#0" expanded="false" />
-            <element signature="e#6015#6016#0" expanded="false" />
-            <element signature="e#6113#6114#0" expanded="false" />
-            <element signature="e#6145#6146#0" expanded="false" />
-            <element signature="e#6241#6242#0" expanded="false" />
-            <element signature="e#6273#6274#0" expanded="false" />
-            <element signature="e#6393#6394#0" expanded="false" />
-            <element signature="e#6435#6436#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Creator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9335794">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1585#1586#0" expanded="false" />
-            <element signature="e#1613#1614#0" expanded="false" />
-            <element signature="e#1715#1716#0" expanded="false" />
-            <element signature="e#1749#1750#0" expanded="false" />
-            <element signature="e#1831#1832#0" expanded="false" />
-            <element signature="e#1856#1857#0" expanded="false" />
-            <element signature="e#1947#1948#0" expanded="false" />
-            <element signature="e#1975#1976#0" expanded="false" />
-            <element signature="e#2070#2071#0" expanded="false" />
-            <element signature="e#2102#2103#0" expanded="false" />
-            <element signature="e#2221#2222#0" expanded="false" />
-            <element signature="e#2263#2264#0" expanded="false" />
-            <element signature="e#2360#2361#0" expanded="false" />
-            <element signature="e#2393#2394#0" expanded="false" />
-            <element signature="e#2516#2517#0" expanded="false" />
-            <element signature="e#2560#2561#0" expanded="false" />
-            <element signature="e#2643#2644#0" expanded="false" />
-            <element signature="e#2669#2670#0" expanded="false" />
-            <element signature="e#2763#2764#0" expanded="false" />
-            <element signature="e#2793#2794#0" expanded="false" />
-            <element signature="e#2884#2885#0" expanded="false" />
-            <element signature="e#2914#2915#0" expanded="false" />
-            <element signature="e#3025#3026#0" expanded="false" />
-            <element signature="e#3063#3064#0" expanded="false" />
-            <element signature="e#3164#3165#0" expanded="false" />
-            <element signature="e#3199#3200#0" expanded="false" />
-            <element signature="e#3330#3331#0" expanded="false" />
-            <element signature="e#3378#3379#0" expanded="false" />
-            <element signature="e#3479#3480#0" expanded="false" />
-            <element signature="e#3514#3515#0" expanded="false" />
-            <element signature="e#3645#3646#0" expanded="false" />
-            <element signature="e#3693#3694#0" expanded="false" />
-            <element signature="e#3786#3787#0" expanded="false" />
-            <element signature="e#3817#3818#0" expanded="false" />
-            <element signature="e#3932#3933#0" expanded="false" />
-            <element signature="e#3972#3973#0" expanded="false" />
-            <element signature="e#4069#4070#0" expanded="false" />
-            <element signature="e#4102#4103#0" expanded="false" />
-            <element signature="e#4225#4226#0" expanded="false" />
-            <element signature="e#4269#4270#0" expanded="false" />
-            <element signature="e#4378#4379#0" expanded="false" />
-            <element signature="e#4417#4418#0" expanded="false" />
-            <element signature="e#4729#4730#0" expanded="false" />
-            <element signature="e#4768#4769#0" expanded="false" />
-            <element signature="e#5064#5065#0" expanded="false" />
-            <element signature="e#5095#5096#0" expanded="false" />
-            <element signature="e#5210#5211#0" expanded="false" />
-            <element signature="e#5250#5251#0" expanded="false" />
-            <element signature="e#5345#5346#0" expanded="false" />
-            <element signature="e#5377#5378#0" expanded="false" />
-            <element signature="e#5496#5497#0" expanded="false" />
-            <element signature="e#5538#5539#0" expanded="false" />
-            <element signature="e#5649#5650#0" expanded="false" />
-            <element signature="e#5689#5690#0" expanded="false" />
-            <element signature="e#5984#5985#0" expanded="false" />
-            <element signature="e#6011#6012#0" expanded="false" />
-            <element signature="e#6109#6110#0" expanded="false" />
-            <element signature="e#6141#6142#0" expanded="false" />
-            <element signature="e#6237#6238#0" expanded="false" />
-            <element signature="e#6269#6270#0" expanded="false" />
-            <element signature="e#6389#6390#0" expanded="false" />
-            <element signature="e#6431#6432#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/PullRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49815497">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#568#569#0" expanded="false" />
-            <element signature="e#594#595#0" expanded="false" />
-            <element signature="e#688#689#0" expanded="false" />
-            <element signature="e#718#719#0" expanded="false" />
-            <element signature="e#809#810#0" expanded="false" />
-            <element signature="e#839#840#0" expanded="false" />
-            <element signature="e#950#951#0" expanded="false" />
-            <element signature="e#988#989#0" expanded="false" />
-            <element signature="e#1079#1080#0" expanded="false" />
-            <element signature="e#1109#1110#0" expanded="false" />
-            <element signature="e#1220#1221#0" expanded="false" />
-            <element signature="e#1258#1259#0" expanded="false" />
-            <element signature="e#1351#1352#0" expanded="false" />
-            <element signature="e#1382#1383#0" expanded="false" />
-            <element signature="e#1497#1498#0" expanded="false" />
-            <element signature="e#1537#1538#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52583027">
-          <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Assignee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44280443">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1586#1587#0" expanded="false" />
-            <element signature="e#1614#1615#0" expanded="false" />
-            <element signature="e#1716#1717#0" expanded="false" />
-            <element signature="e#1750#1751#0" expanded="false" />
-            <element signature="e#1832#1833#0" expanded="false" />
-            <element signature="e#1857#1858#0" expanded="false" />
-            <element signature="e#1948#1949#0" expanded="false" />
-            <element signature="e#1976#1977#0" expanded="false" />
-            <element signature="e#2071#2072#0" expanded="false" />
-            <element signature="e#2103#2104#0" expanded="false" />
-            <element signature="e#2222#2223#0" expanded="false" />
-            <element signature="e#2264#2265#0" expanded="false" />
-            <element signature="e#2361#2362#0" expanded="false" />
-            <element signature="e#2394#2395#0" expanded="false" />
-            <element signature="e#2517#2518#0" expanded="false" />
-            <element signature="e#2561#2562#0" expanded="false" />
-            <element signature="e#2644#2645#0" expanded="false" />
-            <element signature="e#2670#2671#0" expanded="false" />
-            <element signature="e#2764#2765#0" expanded="false" />
-            <element signature="e#2794#2795#0" expanded="false" />
-            <element signature="e#2885#2886#0" expanded="false" />
-            <element signature="e#2915#2916#0" expanded="false" />
-            <element signature="e#3026#3027#0" expanded="false" />
-            <element signature="e#3064#3065#0" expanded="false" />
-            <element signature="e#3165#3166#0" expanded="false" />
-            <element signature="e#3200#3201#0" expanded="false" />
-            <element signature="e#3331#3332#0" expanded="false" />
-            <element signature="e#3379#3380#0" expanded="false" />
-            <element signature="e#3480#3481#0" expanded="false" />
-            <element signature="e#3515#3516#0" expanded="false" />
-            <element signature="e#3646#3647#0" expanded="false" />
-            <element signature="e#3694#3695#0" expanded="false" />
-            <element signature="e#3787#3788#0" expanded="false" />
-            <element signature="e#3818#3819#0" expanded="false" />
-            <element signature="e#3933#3934#0" expanded="false" />
-            <element signature="e#3973#3974#0" expanded="false" />
-            <element signature="e#4070#4071#0" expanded="false" />
-            <element signature="e#4103#4104#0" expanded="false" />
-            <element signature="e#4226#4227#0" expanded="false" />
-            <element signature="e#4270#4271#0" expanded="false" />
-            <element signature="e#4379#4380#0" expanded="false" />
-            <element signature="e#4418#4419#0" expanded="false" />
-            <element signature="e#4730#4731#0" expanded="false" />
-            <element signature="e#4769#4770#0" expanded="false" />
-            <element signature="e#5065#5066#0" expanded="false" />
-            <element signature="e#5096#5097#0" expanded="false" />
-            <element signature="e#5211#5212#0" expanded="false" />
-            <element signature="e#5251#5252#0" expanded="false" />
-            <element signature="e#5346#5347#0" expanded="false" />
-            <element signature="e#5378#5379#0" expanded="false" />
-            <element signature="e#5497#5498#0" expanded="false" />
-            <element signature="e#5539#5540#0" expanded="false" />
-            <element signature="e#5650#5651#0" expanded="false" />
-            <element signature="e#5690#5691#0" expanded="false" />
-            <element signature="e#5985#5986#0" expanded="false" />
-            <element signature="e#6012#6013#0" expanded="false" />
-            <element signature="e#6110#6111#0" expanded="false" />
-            <element signature="e#6142#6143#0" expanded="false" />
-            <element signature="e#6238#6239#0" expanded="false" />
-            <element signature="e#6270#6271#0" expanded="false" />
-            <element signature="e#6390#6391#0" expanded="false" />
-            <element signature="e#6432#6433#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/ImageLoader/ImageLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Adapter/FollowingAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/tabline.9.png">
-      <provider selected="true" editor-type-id="ninepatcheditor">
-        <state />
-      </provider>
-      <provider editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/samaritan_survillance.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -3051,14 +2648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Fragment/CommitsMainTabFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Bean/ItemAbout.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3093,14 +2682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4945055">
           <caret line="36" column="64" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Fragment/FollowingMainTabFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5494506">
-          <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -3184,38 +2765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/UserActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.252747">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="88" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Fragment/IssuesMainTabFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="106" selection-start-line="40" selection-start-column="97" selection-end-line="40" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Interface/GitHubClientUsers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Bean/ItemIssue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Issue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.4074073">
@@ -3237,19 +2786,402 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.553571">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.65445024">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Author.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#481#482#0" expanded="false" />
+            <element signature="e#508#509#0" expanded="false" />
+            <element signature="e#606#607#0" expanded="false" />
+            <element signature="e#638#639#0" expanded="false" />
+            <element signature="e#725#726#0" expanded="false" />
+            <element signature="e#753#754#0" expanded="false" />
+            <element signature="e#855#856#0" expanded="false" />
+            <element signature="e#889#890#0" expanded="false" />
+            <element signature="e#974#975#0" expanded="false" />
+            <element signature="e#1001#1002#0" expanded="false" />
+            <element signature="e#1099#1100#0" expanded="false" />
+            <element signature="e#1131#1132#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Author_.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1586#1587#0" expanded="false" />
+            <element signature="e#1614#1615#0" expanded="false" />
+            <element signature="e#1716#1717#0" expanded="false" />
+            <element signature="e#1750#1751#0" expanded="false" />
+            <element signature="e#1832#1833#0" expanded="false" />
+            <element signature="e#1857#1858#0" expanded="false" />
+            <element signature="e#1948#1949#0" expanded="false" />
+            <element signature="e#1976#1977#0" expanded="false" />
+            <element signature="e#2071#2072#0" expanded="false" />
+            <element signature="e#2103#2104#0" expanded="false" />
+            <element signature="e#2222#2223#0" expanded="false" />
+            <element signature="e#2264#2265#0" expanded="false" />
+            <element signature="e#2361#2362#0" expanded="false" />
+            <element signature="e#2394#2395#0" expanded="false" />
+            <element signature="e#2517#2518#0" expanded="false" />
+            <element signature="e#2561#2562#0" expanded="false" />
+            <element signature="e#2644#2645#0" expanded="false" />
+            <element signature="e#2670#2671#0" expanded="false" />
+            <element signature="e#2764#2765#0" expanded="false" />
+            <element signature="e#2794#2795#0" expanded="false" />
+            <element signature="e#2885#2886#0" expanded="false" />
+            <element signature="e#2915#2916#0" expanded="false" />
+            <element signature="e#3026#3027#0" expanded="false" />
+            <element signature="e#3064#3065#0" expanded="false" />
+            <element signature="e#3165#3166#0" expanded="false" />
+            <element signature="e#3200#3201#0" expanded="false" />
+            <element signature="e#3331#3332#0" expanded="false" />
+            <element signature="e#3379#3380#0" expanded="false" />
+            <element signature="e#3480#3481#0" expanded="false" />
+            <element signature="e#3515#3516#0" expanded="false" />
+            <element signature="e#3646#3647#0" expanded="false" />
+            <element signature="e#3694#3695#0" expanded="false" />
+            <element signature="e#3787#3788#0" expanded="false" />
+            <element signature="e#3818#3819#0" expanded="false" />
+            <element signature="e#3933#3934#0" expanded="false" />
+            <element signature="e#3973#3974#0" expanded="false" />
+            <element signature="e#4070#4071#0" expanded="false" />
+            <element signature="e#4103#4104#0" expanded="false" />
+            <element signature="e#4226#4227#0" expanded="false" />
+            <element signature="e#4270#4271#0" expanded="false" />
+            <element signature="e#4379#4380#0" expanded="false" />
+            <element signature="e#4418#4419#0" expanded="false" />
+            <element signature="e#4730#4731#0" expanded="false" />
+            <element signature="e#4769#4770#0" expanded="false" />
+            <element signature="e#5065#5066#0" expanded="false" />
+            <element signature="e#5096#5097#0" expanded="false" />
+            <element signature="e#5211#5212#0" expanded="false" />
+            <element signature="e#5251#5252#0" expanded="false" />
+            <element signature="e#5346#5347#0" expanded="false" />
+            <element signature="e#5378#5379#0" expanded="false" />
+            <element signature="e#5497#5498#0" expanded="false" />
+            <element signature="e#5539#5540#0" expanded="false" />
+            <element signature="e#5650#5651#0" expanded="false" />
+            <element signature="e#5690#5691#0" expanded="false" />
+            <element signature="e#5985#5986#0" expanded="false" />
+            <element signature="e#6012#6013#0" expanded="false" />
+            <element signature="e#6110#6111#0" expanded="false" />
+            <element signature="e#6142#6143#0" expanded="false" />
+            <element signature="e#6238#6239#0" expanded="false" />
+            <element signature="e#6270#6271#0" expanded="false" />
+            <element signature="e#6390#6391#0" expanded="false" />
+            <element signature="e#6432#6433#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Commit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#1191#1192#0" expanded="true" />
+            <element signature="e#1285#1286#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+            <element signature="e#1406#1407#0" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
+            <element signature="e#1547#1548#0" expanded="true" />
+            <element signature="e#1585#1586#0" expanded="true" />
+            <element signature="e#1684#1685#0" expanded="true" />
+            <element signature="e#1718#1719#0" expanded="true" />
+            <element signature="e#1845#1846#0" expanded="true" />
+            <element signature="e#1891#1892#0" expanded="true" />
+            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#2010#2011#0" expanded="true" />
+            <element signature="e#2117#2118#0" expanded="true" />
+            <element signature="e#2153#2154#0" expanded="true" />
+            <element signature="e#2243#2244#0" expanded="true" />
+            <element signature="e#2272#2273#0" expanded="true" />
+            <element signature="e#2379#2380#0" expanded="true" />
+            <element signature="e#2415#2416#0" expanded="true" />
+            <element signature="e#2514#2515#0" expanded="true" />
+            <element signature="e#2546#2547#0" expanded="true" />
+            <element signature="e#2668#2669#0" expanded="true" />
+            <element signature="e#2710#2711#0" expanded="true" />
+            <element signature="e#2807#2808#0" expanded="true" />
+            <element signature="e#2837#2838#0" expanded="true" />
+            <element signature="e#2953#2954#0" expanded="true" />
+            <element signature="e#2991#2992#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Tree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#431#432#0" expanded="false" />
+            <element signature="e#525#526#0" expanded="false" />
+            <element signature="e#555#556#0" expanded="false" />
+            <element signature="e#638#639#0" expanded="false" />
+            <element signature="e#664#665#0" expanded="false" />
+            <element signature="e#758#759#0" expanded="false" />
+            <element signature="e#788#789#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Committer_.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5825243">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1588#1589#0" expanded="false" />
+            <element signature="e#1616#1617#0" expanded="false" />
+            <element signature="e#1718#1719#0" expanded="false" />
+            <element signature="e#1752#1753#0" expanded="false" />
+            <element signature="e#1834#1835#0" expanded="false" />
+            <element signature="e#1859#1860#0" expanded="false" />
+            <element signature="e#1950#1951#0" expanded="false" />
+            <element signature="e#1978#1979#0" expanded="false" />
+            <element signature="e#2073#2074#0" expanded="false" />
+            <element signature="e#2105#2106#0" expanded="false" />
+            <element signature="e#2224#2225#0" expanded="false" />
+            <element signature="e#2266#2267#0" expanded="false" />
+            <element signature="e#2363#2364#0" expanded="false" />
+            <element signature="e#2396#2397#0" expanded="false" />
+            <element signature="e#2519#2520#0" expanded="false" />
+            <element signature="e#2563#2564#0" expanded="false" />
+            <element signature="e#2646#2647#0" expanded="false" />
+            <element signature="e#2672#2673#0" expanded="false" />
+            <element signature="e#2766#2767#0" expanded="false" />
+            <element signature="e#2796#2797#0" expanded="false" />
+            <element signature="e#2887#2888#0" expanded="false" />
+            <element signature="e#2917#2918#0" expanded="false" />
+            <element signature="e#3028#3029#0" expanded="false" />
+            <element signature="e#3066#3067#0" expanded="false" />
+            <element signature="e#3167#3168#0" expanded="false" />
+            <element signature="e#3202#3203#0" expanded="false" />
+            <element signature="e#3333#3334#0" expanded="false" />
+            <element signature="e#3381#3382#0" expanded="false" />
+            <element signature="e#3482#3483#0" expanded="false" />
+            <element signature="e#3517#3518#0" expanded="false" />
+            <element signature="e#3648#3649#0" expanded="false" />
+            <element signature="e#3696#3697#0" expanded="false" />
+            <element signature="e#3789#3790#0" expanded="false" />
+            <element signature="e#3820#3821#0" expanded="false" />
+            <element signature="e#3935#3936#0" expanded="false" />
+            <element signature="e#3975#3976#0" expanded="false" />
+            <element signature="e#4072#4073#0" expanded="false" />
+            <element signature="e#4105#4106#0" expanded="false" />
+            <element signature="e#4228#4229#0" expanded="false" />
+            <element signature="e#4272#4273#0" expanded="false" />
+            <element signature="e#4381#4382#0" expanded="false" />
+            <element signature="e#4420#4421#0" expanded="false" />
+            <element signature="e#4732#4733#0" expanded="false" />
+            <element signature="e#4771#4772#0" expanded="false" />
+            <element signature="e#5067#5068#0" expanded="false" />
+            <element signature="e#5098#5099#0" expanded="false" />
+            <element signature="e#5213#5214#0" expanded="false" />
+            <element signature="e#5253#5254#0" expanded="false" />
+            <element signature="e#5348#5349#0" expanded="false" />
+            <element signature="e#5380#5381#0" expanded="false" />
+            <element signature="e#5499#5500#0" expanded="false" />
+            <element signature="e#5541#5542#0" expanded="false" />
+            <element signature="e#5652#5653#0" expanded="false" />
+            <element signature="e#5692#5693#0" expanded="false" />
+            <element signature="e#5987#5988#0" expanded="false" />
+            <element signature="e#6014#6015#0" expanded="false" />
+            <element signature="e#6112#6113#0" expanded="false" />
+            <element signature="e#6144#6145#0" expanded="false" />
+            <element signature="e#6240#6241#0" expanded="false" />
+            <element signature="e#6272#6273#0" expanded="false" />
+            <element signature="e#6392#6393#0" expanded="false" />
+            <element signature="e#6434#6435#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Parent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8252427">
+          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#408#409#0" expanded="false" />
+            <element signature="e#434#435#0" expanded="false" />
+            <element signature="e#528#529#0" expanded="false" />
+            <element signature="e#558#559#0" expanded="false" />
+            <element signature="e#641#642#0" expanded="false" />
+            <element signature="e#667#668#0" expanded="false" />
+            <element signature="e#761#762#0" expanded="false" />
+            <element signature="e#791#792#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Committer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61165047">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#1133#1134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_commit_list.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.372549">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Adapter/CommitAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0194175">
+          <caret line="53" column="85" selection-start-line="53" selection-start-column="85" selection-end-line="53" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Bean/ItemIssue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17475729">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/response/Commit_.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69902915">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1119#1120#0" expanded="true" />
+            <element signature="e#1217#1218#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1370#1371#0" expanded="true" />
+            <element signature="e#1412#1413#0" expanded="true" />
+            <element signature="e#1503#1504#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
+            <element signature="e#1643#1644#0" expanded="true" />
+            <element signature="e#1681#1682#0" expanded="true" />
+            <element signature="e#1764#1765#0" expanded="true" />
+            <element signature="e#1791#1792#0" expanded="true" />
+            <element signature="e#1887#1888#0" expanded="true" />
+            <element signature="e#1919#1920#0" expanded="true" />
+            <element signature="e#2021#2022#0" expanded="true" />
+            <element signature="e#2056#2057#0" expanded="true" />
+            <element signature="e#2188#2189#0" expanded="true" />
+            <element signature="e#2236#2237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Bean/ItemCommit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5825243">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/ImageLoader/ImageLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/UserActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.387435">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="88" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Interface/GitHubClientUsers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="39" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Fragment/FollowingMainTabFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Fragment/IssuesMainTabFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Fragment/CommitsMainTabFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6666667">
+          <caret line="27" column="35" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/gitluck/com/githubentry/Activity/RepositoryActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41666666">
-          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        <state vertical-scroll-proportion="1.2327273">
+          <caret line="134" column="28" selection-start-line="134" selection-start-column="28" selection-end-line="134" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2522#2533#0" expanded="true" />
+            <element signature="e#2736#2747#0" expanded="true" />
+            <element signature="e#2859#2871#0" expanded="true" />
           </folding>
         </state>
       </provider>

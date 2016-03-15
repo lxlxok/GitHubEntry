@@ -2,6 +2,7 @@ package gitluck.com.githubentry.Interface;
 
 import java.util.List;
 
+import gitluck.com.githubentry.response.Commit;
 import gitluck.com.githubentry.response.Issue;
 import gitluck.com.githubentry.response.Repository;
 import gitluck.com.githubentry.response.Token;
@@ -55,7 +56,7 @@ public interface GitHubClientUsers {
 
     //commit
     @GET("/repos/{owner}/{repo}/commits?&per_page=20")
-    Call<List<User>> listCommit(@Header("authorizations") String authorizations, @Path("owner") String owner, @Path("repo") String repo,@Query("page") String page);
+    Call<List<Commit>> listCommit(@Header("authorizations") String authorizations, @Path("owner") String owner, @Path("repo") String repo,@Query("page") String page);
 
 
     //content

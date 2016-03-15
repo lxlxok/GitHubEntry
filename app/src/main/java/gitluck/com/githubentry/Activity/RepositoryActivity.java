@@ -24,12 +24,15 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import gitluck.com.githubentry.Adapter.CommitAdapter;
 import gitluck.com.githubentry.Adapter.IssueAdapter;
 import gitluck.com.githubentry.Adapter.MenuAdapter;
+import gitluck.com.githubentry.Bean.ItemCommit;
 import gitluck.com.githubentry.Bean.ItemFollowers;
 import gitluck.com.githubentry.Bean.ItemIssue;
 import gitluck.com.githubentry.Bean.ItemMenu;
 import gitluck.com.githubentry.Fragment.CodeMainTabFragment;
+import gitluck.com.githubentry.Fragment.CommitsMainTabFragment;
 import gitluck.com.githubentry.Fragment.FollowerMainTabFragment;
 import gitluck.com.githubentry.Fragment.FollowingMainTabFragment;
 import gitluck.com.githubentry.Fragment.IssuesMainTabFragment;
@@ -38,6 +41,7 @@ import gitluck.com.githubentry.Fragment.RepoMainTabFragment;
 import gitluck.com.githubentry.Interface.GitHubClientUsers;
 import gitluck.com.githubentry.R;
 import gitluck.com.githubentry.ServiceGenerator;
+import gitluck.com.githubentry.response.Commit;
 import gitluck.com.githubentry.response.Issue;
 import gitluck.com.githubentry.response.User;
 import retrofit2.Call;
@@ -69,6 +73,10 @@ public class RepositoryActivity extends FragmentActivity {
 
     public static List<ItemIssue> listIssue = new ArrayList<ItemIssue>();
     public static IssueAdapter issueAdapter;
+
+
+    public static List<ItemCommit> listCommit = new ArrayList<ItemCommit>();
+    public static CommitAdapter commitAdapter;
 
 
 
@@ -125,7 +133,7 @@ public class RepositoryActivity extends FragmentActivity {
          */
         data = new ArrayList<Fragment>();
         CodeMainTabFragment tab01 = new CodeMainTabFragment();
-        CodeMainTabFragment tab02 = new CodeMainTabFragment();
+        CommitsMainTabFragment tab02 = new CommitsMainTabFragment();
         IssuesMainTabFragment tab03 = new IssuesMainTabFragment();
 
         data.add(tab01);
@@ -183,6 +191,7 @@ public class RepositoryActivity extends FragmentActivity {
                         break;
                     case 1:
                         commitsTextView.setTextColor(Color.parseColor("#008000"));
+                        getCommit();
                         break;
                     case 2:
                         issuesTextView.setTextColor(Color.parseColor("#008000"));
@@ -227,7 +236,7 @@ public class RepositoryActivity extends FragmentActivity {
                         }
 
 
-                        listIssue.add(new ItemIssue(resource, response.body().get(i).getTitle(), response.body().get(i).getUser().getLogin(), response.body().get(i).getUpdatedAt().substring(0,10)));
+                        listIssue.add(new ItemIssue(resource, response.body().get(i).getTitle(), response.body().get(i).getUser().getLogin(), response.body().get(i).getUpdatedAt().substring(0, 10)));
                         issueAdapter.notifyDataSetChanged();
 
                     }
@@ -247,7 +256,39 @@ public class RepositoryActivity extends FragmentActivity {
 
 
 
+    public void getCommit() {
+        GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
+        Call <List<Commit>> call = userService.listCommit("token " + token, reposPath[0], reposPath[1], "1");
+        call.enqueue(new Callback<List<Commit>>() {
+            @Override
+            public void onResponse(Response<List<Commit>> response) {
+                if (response.isSuccess()) {
+                    Log.i(TAG, "response success code is" + response.code());
 
+                    // clean the listRepos
+                    listCommit.clear();
+
+                    for (int i = 0; i < response.body().size(); i++) {
+
+                        listCommit.add(new ItemCommit(R.drawable.commit_48, response.body().get(i).getCommit().getMessage(),response.body().get(i).getCommit().getAuthor().getName(), response.body().get(i).getCommit().getAuthor().getDate().substring(0,10)));
+
+
+                        commitAdapter.notifyDataSetChanged();
+
+                    }
+                } else {
+                    Log.i(TAG, "response failed");
+                    Log.i(TAG, "response failed code is" + response.code());
+                }
+            }
+
+            @Override
+            public void onFailure(Throwable t) {
+
+            }
+        });
+
+    }
 
 
 

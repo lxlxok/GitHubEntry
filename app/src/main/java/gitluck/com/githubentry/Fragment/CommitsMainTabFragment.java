@@ -16,7 +16,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import gitluck.com.githubentry.Activity.MemberActivity;
+import gitluck.com.githubentry.Activity.RepositoryActivity;
 import gitluck.com.githubentry.Adapter.AboutAdapter;
+import gitluck.com.githubentry.Adapter.CommitAdapter;
 import gitluck.com.githubentry.Bean.ItemAbout;
 import gitluck.com.githubentry.R;
 
@@ -32,6 +34,10 @@ public class CommitsMainTabFragment extends Fragment {
         Log.e("TAG","显示聊天");
         View view =  inflater.inflate(R.layout.tab02_commits, container, false);
         ListView lv = (ListView) view.findViewById(R.id.id_lv_commits);
+
+
+        RepositoryActivity.commitAdapter = new CommitAdapter(this.getContext(), RepositoryActivity.listCommit);
+        lv.setAdapter(RepositoryActivity.commitAdapter);
 
 /*
         lv.setAdapter(new AboutAdapter(getContext(), getDatas(), lv));
@@ -53,22 +59,6 @@ public class CommitsMainTabFragment extends Fragment {
     }
 
 
-/*
-    private List<ItemAbout> getDatas() {
-        List<ItemAbout> mDatas = new ArrayList<>();
-        for (int i = 0; i < 20; i++) {
-            mDatas.add(new ItemAbout(
-                    "https://avatars.githubusercontent.com/u/23469?v=3",
-                    "Title" + i,
-                    "Content" + i
-            ));
-        }
 
-
-
-
-        return mDatas;
-    }
-*/
 
 }

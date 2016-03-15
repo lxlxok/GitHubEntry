@@ -5,6 +5,11 @@ package gitluck.com.githubentry.Bean;
  */
 public class ItemIssue {
     public int itemImageResid;
+    public String itemTitle;
+    public String itemUser;
+    public String itemUpdatedTime;
+
+
 
     public ItemIssue(int itemImageResid, String itemTitle, String itemUser, String itemUpdatedTime) {
         this.itemImageResid = itemImageResid;
@@ -12,10 +17,5 @@ public class ItemIssue {
         this.itemUser = itemUser;
         this.itemUpdatedTime = itemUpdatedTime;
     }
-
-    public String itemTitle;
-    public String itemUser;
-    public String itemUpdatedTime;
-
 
 }
