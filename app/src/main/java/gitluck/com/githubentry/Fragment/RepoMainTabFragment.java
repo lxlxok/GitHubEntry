@@ -15,6 +15,7 @@ import android.widget.TextView;
 import gitluck.com.githubentry.Activity.MemberActivity;
 import gitluck.com.githubentry.Activity.RepositoryActivity;
 import gitluck.com.githubentry.Adapter.ReposAdapter;
+import gitluck.com.githubentry.Interface.GitHubClientUsers;
 import gitluck.com.githubentry.R;
 import gitluck.com.githubentry.UserActivity;
 
@@ -40,7 +41,7 @@ public class RepoMainTabFragment extends Fragment {
                 Log.e("TAG", String.valueOf(position));
                 //Toast.makeText(getContext(), position, Toast.LENGTH_SHORT).show();
                 // Use textView.text() as the information to the intent.
-                TextView textView = (TextView) view.findViewById(R.id.id_title);
+                TextView textView = (TextView) view.findViewById(R.id.id_repos_title);
                 Log.e("TAGTAG", (String) textView.getText());
                 Intent intent = new Intent(getActivity(), RepositoryActivity.class);
                 intent.putExtra("name", (String) textView.getText());
@@ -49,6 +50,9 @@ public class RepoMainTabFragment extends Fragment {
         });
         return view;
     }
+
+
+
 
 
 }

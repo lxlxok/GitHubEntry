@@ -317,7 +317,7 @@ public class UserActivity extends FragmentActivity {
 
                     for (int i = 0; i < response.body().size(); i++) {
                         int resource = R.drawable.book_48;
-                        Log.i(TAG, "login = " + response.body().get(i).getName());
+                      //  Log.i(TAG, "login = " + response.body().get(i).getName());
                      //   Log.i(TAG, "login = " + response.body().get(i).getDescription());
                      //   Log.i(TAG, "login = " + response.body().get(i).getForksCount()); //int
 
@@ -327,10 +327,10 @@ public class UserActivity extends FragmentActivity {
                         if (response.body().get(i).getPrivate()) {
                             resource = R.drawable.lock_48;
                         }
-                        Log.i(TAG, "resource = " + resource);
+                      //  Log.i(TAG, "resource = " + resource);
 
 
-                        listRepos.add(new ItemRepos(resource, response.body().get(i).getName(), response.body().get(i).getLanguage(), response.body().get(i).getStargazersCount(), response.body().get(i).getWatchersCount()));
+                        listRepos.add(new ItemRepos(resource, response.body().get(i).getFullName(), response.body().get(i).getLanguage(), response.body().get(i).getStargazersCount(), response.body().get(i).getWatchersCount()));
                         reposAdapter.notifyDataSetChanged();
 
                     }
@@ -360,9 +360,9 @@ public class UserActivity extends FragmentActivity {
                     Log.i(TAG, "response success code is" + response.code());
                     listFollowers.clear();
                     for (int i = 0; i < response.body().size(); i++) {
-                        Log.i(TAG, "login = " + response.body().get(i).getLogin());
+                        //Log.i(TAG, "login = " + response.body().get(i).getLogin());
 
-                        Log.i(TAG, "testURLof getfollower" + response.body().get(i).getAvatarUrl());
+                       // Log.i(TAG, "testURLof getfollower" + response.body().get(i).getAvatarUrl());
                         listFollowers.add(new ItemFollowers(response.body().get(i).getAvatarUrl(), response.body().get(i).getLogin()));
                         followerAdapter.notifyDataSetChanged();
 

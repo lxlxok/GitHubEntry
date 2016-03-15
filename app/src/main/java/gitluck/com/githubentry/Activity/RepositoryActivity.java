@@ -24,8 +24,10 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import gitluck.com.githubentry.Adapter.IssueAdapter;
 import gitluck.com.githubentry.Adapter.MenuAdapter;
 import gitluck.com.githubentry.Bean.ItemFollowers;
+import gitluck.com.githubentry.Bean.ItemIssue;
 import gitluck.com.githubentry.Bean.ItemMenu;
 import gitluck.com.githubentry.Fragment.CodeMainTabFragment;
 import gitluck.com.githubentry.Fragment.FollowerMainTabFragment;
@@ -63,6 +65,10 @@ public class RepositoryActivity extends FragmentActivity {
     private List<ItemMenu> menuList;
     private ListView leftDrawer;
     private Context context;
+    private String[] reposPath;
+
+    public static List<ItemIssue> listIssue = new ArrayList<ItemIssue>();
+    public static IssueAdapter issueAdapter;
 
 
 
@@ -75,7 +81,10 @@ public class RepositoryActivity extends FragmentActivity {
         setContentView(R.layout.activity_repo);
         Intent intent = getIntent();
         String RepositoryName = intent.getStringExtra("name");
-        Log.e("TAGTAG", RepositoryName + RepositoryName);
+        reposPath = RepositoryName.split("/");
+
+        Log.i(TAG,"user="+reposPath[0]);
+        Log.i(TAG,"repos="+reposPath[1]);
 
         TextView tvTitle = (TextView) findViewById(R.id.id_top1_title);
         tvTitle.setText(RepositoryName);
@@ -170,12 +179,15 @@ public class RepositoryActivity extends FragmentActivity {
                 switch (position) {
                     case 0:
                         codeTextView.setTextColor(Color.parseColor("#008000"));
+
                         break;
                     case 1:
                         commitsTextView.setTextColor(Color.parseColor("#008000"));
                         break;
                     case 2:
                         issuesTextView.setTextColor(Color.parseColor("#008000"));
+                        getIssue();
+
                         break;
                 }
                 currentPageIndex = position;
@@ -193,6 +205,49 @@ public class RepositoryActivity extends FragmentActivity {
         commitsTextView.setTextColor(Color.BLACK);
         issuesTextView.setTextColor(Color.BLACK);
     }
+
+
+    public void getIssue() {
+        GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
+        Call <List<Issue>> call = userService.listIssue("token " + token, reposPath[0], reposPath[1], "1");
+        call.enqueue(new Callback<List<Issue>>() {
+            @Override
+            public void onResponse(Response<List<Issue>> response) {
+                if (response.isSuccess()) {
+                    Log.i(TAG, "response success code is" + response.code());
+
+                    // clean the listRepos
+                    listIssue.clear();
+
+                    for (int i = 0; i < response.body().size(); i++) {
+                        int resource = R.drawable.issue_open;
+
+                        if (response.body().get(i).getState().equals("closed")) {
+                            resource = R.drawable.issue_closed;
+                        }
+
+
+                        listIssue.add(new ItemIssue(resource, response.body().get(i).getTitle(), response.body().get(i).getUser().getLogin(), response.body().get(i).getUpdatedAt().substring(0,10)));
+                        issueAdapter.notifyDataSetChanged();
+
+                    }
+                } else {
+                    Log.i(TAG, "response failed");
+                    Log.i(TAG, "response failed code is" + response.code());
+                }
+            }
+
+            @Override
+            public void onFailure(Throwable t) {
+
+            }
+        });
+
+    }
+
+
+
+
 
 
 

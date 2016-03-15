@@ -16,9 +16,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import gitluck.com.githubentry.Activity.MemberActivity;
+import gitluck.com.githubentry.Activity.RepositoryActivity;
 import gitluck.com.githubentry.Adapter.AboutAdapter;
+import gitluck.com.githubentry.Adapter.IssueAdapter;
 import gitluck.com.githubentry.Bean.ItemAbout;
 import gitluck.com.githubentry.R;
+import gitluck.com.githubentry.response.Repository;
 
 /**
  * Created by Administrator on 2/27/2016.
@@ -34,31 +37,29 @@ public class IssuesMainTabFragment extends Fragment {
         ListView lv = (ListView) view.findViewById(R.id.id_lv_issues);
 
 
-  //      lv.setAdapter(new AboutAdapter(getContext(), getDatas(), lv));
+
+        RepositoryActivity.issueAdapter = new IssueAdapter(this.getContext(), RepositoryActivity.listIssue);
+        lv.setAdapter(RepositoryActivity.issueAdapter);
+
+        /*
+
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.e("TAG", String.valueOf(position));
                 //Toast.makeText(getContext(), position, Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getActivity(), MemberActivity.class);
-
+                // Use textView.text() as the information to the intent.
+                TextView textView = (TextView) view.findViewById(R.id.id_repos_title);
+                Log.e("TAGTAG", (String) textView.getText());
+                Intent intent = new Intent(getActivity(), RepositoryActivity.class);
+                intent.putExtra("name", (String) textView.getText());
                 startActivity(intent);
-            }
-        });
+
+        */
+
+
         return view;
     }
-/*
-    private List<ItemAbout> getDatas() {
-        List<ItemAbout> mDatas = new ArrayList<>();
-        for (int i = 0; i < 20; i++) {
-            mDatas.add(new ItemAbout(
-                    "https://avatars.githubusercontent.com/u/23469?v=3",
-                    "Title" + i,
-                    "Content" + i
-            ));
-        }
-        return mDatas;
-    }
-*/
+
 
 }
