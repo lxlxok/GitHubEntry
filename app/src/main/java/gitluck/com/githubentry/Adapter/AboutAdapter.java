@@ -65,10 +65,15 @@ public class AboutAdapter extends BaseAdapter implements AbsListView.OnScrollLis
         ViewHolder viewHolder = null;
         if (convertView == null) {
             viewHolder = new ViewHolder();
-            convertView = mLayoutInflater.inflate(R.layout.item_list, null);
-            viewHolder.img = (ImageView) convertView.findViewById(R.id.id_iv);
-            viewHolder.title = (TextView) convertView.findViewById(R.id.id_title);
-            viewHolder.content = (TextView) convertView.findViewById(R.id.id_content);
+            convertView = mLayoutInflater.inflate(R.layout.about_info_list, null);
+            viewHolder.img = (ImageView) convertView.findViewById(R.id.id_about_iv);
+            viewHolder.aboutName = (TextView) convertView.findViewById(R.id.id_about_name);
+            viewHolder.email = (TextView) convertView.findViewById(R.id.id_about_email);
+            viewHolder.company = (TextView) convertView.findViewById(R.id.id_about_company);
+            viewHolder.location = (TextView) convertView.findViewById(R.id.id_about_location);
+            viewHolder.reposNum = (TextView) convertView.findViewById(R.id.id_repos_num);
+            viewHolder.followerNum = (TextView) convertView.findViewById(R.id.id_follower_num);
+            viewHolder.followingNum = (TextView) convertView.findViewById(R.id.id_following_num);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
@@ -83,16 +88,25 @@ public class AboutAdapter extends BaseAdapter implements AbsListView.OnScrollLis
 
         // 使用AsyncTask的方式，加载对应的图片
         mImageLoader.showImageByAsyncTask(viewHolder.img, url);
-
-        viewHolder.title.setText(itemBean.username);
-        viewHolder.content.setText(itemBean.email);
+        viewHolder.aboutName.setText(itemBean.username);
+        viewHolder.email.setText(itemBean.email);
+        viewHolder.company.setText(itemBean.company);
+        viewHolder.location.setText(itemBean.location);
+        viewHolder.reposNum.setText(itemBean.reposNum);
+        viewHolder.followerNum.setText(itemBean.followerNum);
+        viewHolder.followingNum.setText(itemBean.followingNum);
         return convertView;
     }
 
     class ViewHolder {
         public ImageView img;
-        public TextView title;
-        public TextView content;
+        public TextView aboutName;
+        public TextView email;
+        public TextView company;
+        public TextView location;
+        public TextView reposNum;
+        public TextView followerNum;
+        public TextView followingNum;
     }
 
     @Override

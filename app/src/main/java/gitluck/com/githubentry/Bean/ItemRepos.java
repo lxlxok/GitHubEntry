@@ -7,13 +7,23 @@ public class ItemRepos {
 
     public int itemImageResid;
     public String itemTitle;
-    public String itemContent;
+    public String itemlanguage;
+    public String starNum;
+    public String watchNum;
 
-    public ItemRepos(int itemImageResid, String itemTitle, String itemContent) {
+
+    public ItemRepos(int itemImageResid, String itemTitle, String itemlanguage, int starNum, int watchNum) {
         this.itemImageResid = itemImageResid;
         this.itemTitle = itemTitle;
-        this.itemContent = itemContent;
+        this.itemlanguage = itemlanguage;
+        this.starNum = String.valueOf(starNum);
+        this.watchNum = String.valueOf(watchNum);
     }
+
+
+
+
+
 
 
 }

@@ -46,10 +46,12 @@ public class ReposAdapter extends BaseAdapter {
         ViewHolder viewHolder = null;
         if (convertView == null) {
             viewHolder = new ViewHolder();
-            convertView = mLayoutInflater.inflate(R.layout.item_list, null);
-            viewHolder.img = (ImageView) convertView.findViewById(R.id.id_iv);
-            viewHolder.title = (TextView) convertView.findViewById(R.id.id_title);
-            viewHolder.content = (TextView) convertView.findViewById(R.id.id_content);
+            convertView = mLayoutInflater.inflate(R.layout.item_repos_list, null);
+            viewHolder.img = (ImageView) convertView.findViewById(R.id.id_repos_iv);
+            viewHolder.title = (TextView) convertView.findViewById(R.id.id_repos_title);
+            viewHolder.language = (TextView) convertView.findViewById(R.id.id_repos_lang);
+            viewHolder.starNum = (TextView) convertView.findViewById(R.id.id_star_num);
+            viewHolder.watchNum = (TextView) convertView.findViewById(R.id.id_watch_num);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
@@ -60,13 +62,17 @@ public class ReposAdapter extends BaseAdapter {
         // set the data
         viewHolder.img.setImageResource(itemRepos.itemImageResid);
         viewHolder.title.setText(itemRepos.itemTitle);
-        viewHolder.content.setText(itemRepos.itemContent);
+        viewHolder.language.setText(itemRepos.itemlanguage);
+        viewHolder.starNum.setText(itemRepos.starNum);
+        viewHolder.watchNum.setText(itemRepos.watchNum);
         return convertView;
     }
 
     class ViewHolder {
         public ImageView img;
         public TextView title;
-        public TextView content;
+        public TextView language;
+        public TextView starNum;
+        public TextView watchNum;
     }
 }

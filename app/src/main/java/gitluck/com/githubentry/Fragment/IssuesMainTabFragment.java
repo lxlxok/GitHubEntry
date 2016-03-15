@@ -34,7 +34,7 @@ public class IssuesMainTabFragment extends Fragment {
         ListView lv = (ListView) view.findViewById(R.id.id_lv_issues);
 
 
-        lv.setAdapter(new AboutAdapter(getContext(), getDatas(), lv));
+  //      lv.setAdapter(new AboutAdapter(getContext(), getDatas(), lv));
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -47,7 +47,7 @@ public class IssuesMainTabFragment extends Fragment {
         });
         return view;
     }
-
+/*
     private List<ItemAbout> getDatas() {
         List<ItemAbout> mDatas = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
@@ -59,6 +59,6 @@ public class IssuesMainTabFragment extends Fragment {
         }
         return mDatas;
     }
-
+*/
 
 }

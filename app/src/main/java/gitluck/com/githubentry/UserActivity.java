@@ -26,10 +26,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import gitluck.com.githubentry.Activity.MemberActivity;
+import gitluck.com.githubentry.Adapter.AboutAdapter;
 import gitluck.com.githubentry.Adapter.FollowerAdapter;
 import gitluck.com.githubentry.Adapter.FollowingAdapter;
 import gitluck.com.githubentry.Adapter.MenuAdapter;
 import gitluck.com.githubentry.Adapter.ReposAdapter;
+import gitluck.com.githubentry.Bean.ItemAbout;
 import gitluck.com.githubentry.Bean.ItemFollowers;
 import gitluck.com.githubentry.Bean.ItemFollowing;
 import gitluck.com.githubentry.Bean.ItemMenu;
@@ -72,7 +74,6 @@ public class UserActivity extends FragmentActivity {
     // the user related variable
 
     public String username;
-    public String Realname;
     public String email;
     public String location;
     public String company;
@@ -80,6 +81,9 @@ public class UserActivity extends FragmentActivity {
     public int followerNUm;
     public int followingNum;
     public int reposNum;
+
+    public static List<ItemAbout> listAbout = new ArrayList<>();
+    public static AboutAdapter aboutAdapter;
 
     public static List<ItemRepos> listRepos = new ArrayList<ItemRepos>();
     public static ReposAdapter reposAdapter;
@@ -263,19 +267,22 @@ public class UserActivity extends FragmentActivity {
 
     public void aboutUser() {
         GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
-        Call<User> call = userService.authrizedUser("token "+token);
+        Call<User> call = userService.authrizedUser("token " + token);
         call.enqueue(new Callback<User>() {
             @Override
             public void onResponse(Response<User> response) {
                 if (response.isSuccess()) {
                     username = response.body().getLogin();
-                    Realname = response.body().getName();
                     email = response.body().getEmail();
                     location = response.body().getLocation();
                     company = response.body().getCompany();
                     followerNUm = response.body().getFollowers();
                     followingNum = response.body().getFollowing();
                     reposNum = response.body().getPublicRepos();
+
+                    listAbout.clear();
+                    listAbout.add(new ItemAbout(response.body().getAvatarUrl(),username,email,location,company,followerNUm,followingNum, reposNum));
+                    aboutAdapter.notifyDataSetChanged();
 
                     Log.i(TAG, "response code is" + response.code());
 
@@ -309,16 +316,21 @@ public class UserActivity extends FragmentActivity {
                     listRepos.clear();
 
                     for (int i = 0; i < response.body().size(); i++) {
+                        int resource = R.drawable.book_48;
                         Log.i(TAG, "login = " + response.body().get(i).getName());
-                        Log.i(TAG, "login = " + response.body().get(i).getDescription());
-                        Log.i(TAG, "login = " + response.body().get(i).getPrivate()); //boolean
-                        Log.i(TAG, "login = " + response.body().get(i).getFork()); //boolean
-                        Log.i(TAG, "login = " + response.body().get(i).getForksCount()); //int
-                        Log.i(TAG, "login = " + response.body().get(i).getWatchersCount()); //int
-                        Log.i(TAG, "login = " + response.body().get(i).getStargazersCount()); //int
-                        Log.i(TAG, "login = " + response.body().get(i).getLanguage());
+                     //   Log.i(TAG, "login = " + response.body().get(i).getDescription());
+                     //   Log.i(TAG, "login = " + response.body().get(i).getForksCount()); //int
 
-                        listRepos.add(new ItemRepos(R.mipmap.ic_launcher,response.body().get(i).getName(),response.body().get(i).getDescription()));
+                        if (response.body().get(i).getFork()) {
+                            resource = R.drawable.fork_64;
+                        }
+                        if (response.body().get(i).getPrivate()) {
+                            resource = R.drawable.lock_48;
+                        }
+                        Log.i(TAG, "resource = " + resource);
+
+
+                        listRepos.add(new ItemRepos(resource, response.body().get(i).getName(), response.body().get(i).getLanguage(), response.body().get(i).getStargazersCount(), response.body().get(i).getWatchersCount()));
                         reposAdapter.notifyDataSetChanged();
 
                     }

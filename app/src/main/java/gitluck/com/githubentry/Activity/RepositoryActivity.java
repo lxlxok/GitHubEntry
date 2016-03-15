@@ -195,39 +195,5 @@ public class RepositoryActivity extends FragmentActivity {
     }
 
 
-    /*
-
-    public void getIssue() {
-        GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
-        Call<List<Issue>> call = userService.listIssue("token " + token, owner, repos);
-        call.enqueue(new Callback<List<User>>() {
-            @Override
-            public void onResponse(Response<List<User>> response) {
-                if (response.isSuccess()) {
-                    Log.i(TAG, "response success code is" + response.code());
-                    listFollowers.clear();
-                    for (int i = 0; i < response.body().size(); i++) {
-                        Log.i(TAG, "login = " + response.body().get(i).getLogin());
-
-                        Log.i(TAG, "testURLof getfollower" + response.body().get(i).getAvatarUrl());
-                        listFollowers.add(new ItemFollowers(response.body().get(i).getAvatarUrl(), response.body().get(i).getLogin()));
-                        followerAdapter.notifyDataSetChanged();
-
-                    }
-                } else {
-                    Log.i(TAG, "response failed");
-                    Log.i(TAG, "response failed code is" + response.code());
-                }
-            }
-
-            @Override
-            public void onFailure(Throwable t) {
-
-            }
-        });
-
-    }
-
-    */
 
 }

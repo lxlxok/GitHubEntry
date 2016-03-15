@@ -33,7 +33,7 @@ public class CommitsMainTabFragment extends Fragment {
         View view =  inflater.inflate(R.layout.tab02_commits, container, false);
         ListView lv = (ListView) view.findViewById(R.id.id_lv_commits);
 
-
+/*
         lv.setAdapter(new AboutAdapter(getContext(), getDatas(), lv));
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -45,9 +45,15 @@ public class CommitsMainTabFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+
+        */
+
         return view;
     }
 
+
+/*
     private List<ItemAbout> getDatas() {
         List<ItemAbout> mDatas = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
@@ -57,8 +63,12 @@ public class CommitsMainTabFragment extends Fragment {
                     "Content" + i
             ));
         }
+
+
+
+
         return mDatas;
     }
-
+*/
 
 }

@@ -6,30 +6,23 @@ package gitluck.com.githubentry.Bean;
 public class ItemAbout {
     public String imgurl;
     public String username;
-    public String realname;
     public String email;
     public String location;
     public String company;
-    public int followerNum;
-    public int followingNum;
-    public int reposNum;
+    public String followerNum;
+    public String followingNum;
+    public String reposNum;
 
 
-    public ItemAbout(String imgurl, String username, String realname, String email, String location, String company, int followerNum, int followingNum, int reposNum) {
+    public ItemAbout(String imgurl, String username, String email, String location, String company, int followerNum, int followingNum, int reposNum) {
         this.imgurl = imgurl;
         this.username = username;
-        this.realname = realname;
         this.email = email;
         this.location = location;
         this.company = company;
-        this.followerNum = followerNum;
-        this.followingNum = followingNum;
-        this.reposNum = reposNum;
+        this.followerNum = String.valueOf(followerNum);
+        this.followingNum = String.valueOf(followingNum);
+        this.reposNum = String.valueOf(reposNum);
     }
 
-    public ItemAbout(String imgurl, String username, String email) {
-        this.imgurl = imgurl;
-        this.username = username;
-        this.email = email;
-    }
 }
