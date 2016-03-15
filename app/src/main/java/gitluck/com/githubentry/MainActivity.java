@@ -100,7 +100,10 @@ public class MainActivity extends AppCompatActivity {
         finish();
     }
 
-
+    // start logout activity
+    protected void logout() {
+        Log.e("TAG", "LOGOUT_LOGOUT");
+    }
 
     public void getTokenFromAccount(String accountType, String authTokenType) {
         final AccountManagerFuture<Bundle> future = accountManager.getAuthTokenByFeatures(accountType, authTokenType, null, this, null, null, new AccountManagerCallback<Bundle>() {

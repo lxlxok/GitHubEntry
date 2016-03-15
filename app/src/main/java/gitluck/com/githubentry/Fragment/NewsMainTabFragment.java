@@ -41,6 +41,7 @@ public class NewsMainTabFragment extends Fragment {
                 Log.e("TAG", String.valueOf(position));
                 //Toast.makeText(getContext(), position, Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getActivity(), MemberActivity.class);
+
                 startActivity(intent);
             }
         });

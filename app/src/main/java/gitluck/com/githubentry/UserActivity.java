@@ -124,22 +124,32 @@ public class UserActivity extends FragmentActivity {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         leftDrawer = (ListView) findViewById(R.id.left_drawer);
         menuList = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
-            menuList.add(new ItemMenu(
-                    R.mipmap.ic_launcher,
-                    "Title" + i
-            ));
-        }
+//        for (int i = 0; i < 2; i++) {
+//            menuList.add(new ItemMenu(
+//                    R.mipmap.ic_launcher,
+//                    "Title" + i
+//            ));
+//        }
+        // Add Home
+        menuList.add(new ItemMenu(R.drawable.menu_home, "Home"));
+        // Add About
+        menuList.add(new ItemMenu(R.drawable.menu_about, "About"));
+        // Add Setting
+        menuList.add(new ItemMenu(R.drawable.menu_setting, "Setting"));
         MenuAdapter menuAdapter = new MenuAdapter(this, menuList);
 
         menuAdapter.setOnMenuClickLisetener(new MenuAdapter.OnMenuClickLisetener() {
             @Override
             public void onMenuClick(int position) {
-                if (position != 3) {
-                    Log.e("TAG", position + "sdfsfsfsdfsfsdfsdfsf");
-                    Toast.makeText(getApplicationContext(), "Item Menu" + position, Toast.LENGTH_SHORT).show();
-                } else {
-                    Intent intent = new Intent(UserActivity.this, MemberActivity.class);
+//                if (position != 3) {
+//                    Log.e("TAG", position + "sdfsfsfsdfsfsdfsdfsf");
+//                    Toast.makeText(getApplicationContext(), "Item Menu" + position, Toast.LENGTH_SHORT).show();
+//                } else {
+//                    Intent intent = new Intent(UserActivity.this, MemberActivity.class);
+//                    startActivity(intent);
+//                }
+                if (position == 1) {
+                    Intent intent = new Intent(UserActivity.this, AboutActivity.class);
                     startActivity(intent);
                 }
             }

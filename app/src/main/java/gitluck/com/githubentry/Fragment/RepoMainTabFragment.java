@@ -10,8 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import gitluck.com.githubentry.Activity.MemberActivity;
+import gitluck.com.githubentry.Activity.RepositoryActivity;
 import gitluck.com.githubentry.Adapter.ReposAdapter;
 import gitluck.com.githubentry.R;
 import gitluck.com.githubentry.UserActivity;
@@ -25,7 +27,7 @@ public class RepoMainTabFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         Log.e("TAG","显示好友");
         View view =  inflater.inflate(R.layout.tab02, container, false);
         ListView lv = (ListView) view.findViewById(R.id.id_lv_chat2);
@@ -37,7 +39,11 @@ public class RepoMainTabFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.e("TAG", String.valueOf(position));
                 //Toast.makeText(getContext(), position, Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getActivity(), MemberActivity.class);
+                // Use textView.text() as the information to the intent.
+                TextView textView = (TextView) view.findViewById(R.id.id_title);
+                Log.e("TAGTAG", (String) textView.getText());
+                Intent intent = new Intent(getActivity(), RepositoryActivity.class);
+                intent.putExtra("name", (String) textView.getText());
                 startActivity(intent);
             }
         });
