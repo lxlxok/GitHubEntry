@@ -47,6 +47,20 @@ public interface GitHubClientUsers {
     Call<Token> createAuthorization(@Body Token token, @Header("authorization") String authorization);
 
 
+    // issue
+    @GET("/repos/{owner}/{repo}/issues?&per_page=10")
+    Call<List<User>> listIssue(@Header("authorizations") String authorizations, @Path("owner") String owner, @Path("repo") String repo,@Query("page") String page);
+
+
+    //commit
+    @GET("/repos/{owner}/{repo}/commits?&per_page=10")
+    Call<List<User>> listCommit(@Header("authorizations") String authorizations, @Path("owner") String owner, @Path("repo") String repo,@Query("page") String page);
+
+
+
+    @GET("/repos/{owner}/{repo}/contents/{path}?&per_page=10")
+    Call<List<User>> listContent(@Header("authorizations") String authorizations, @Path("owner") String owner, @Path("repo") String repo, @Path("path") String path, @Query("page") String page);
+
 
 
 

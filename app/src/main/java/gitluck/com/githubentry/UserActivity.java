@@ -278,12 +278,11 @@ public class UserActivity extends FragmentActivity {
                     reposNum = response.body().getPublicRepos();
 
                     Log.i(TAG, "response code is" + response.code());
-                    Log.i(TAG, "response username is" + response.body().getLogin());
 
                 } else {
 
                     Log.i(TAG, "response failed");
-                    Log.i(TAG, "response code is" + response.code());
+
 
                 }
             }

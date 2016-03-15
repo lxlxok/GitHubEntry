@@ -68,7 +68,7 @@ public class FollowerAdapter extends BaseAdapter implements AbsListView.OnScroll
         ViewHolder viewHolder = null;
         if (convertView == null) {
             viewHolder = new ViewHolder();
-            convertView = mLayoutInflater.inflate(R.layout.item_list, null);
+            convertView = mLayoutInflater.inflate(R.layout.item_follow_list, null);
             viewHolder.img = (ImageView) convertView.findViewById(R.id.id_iv);
             viewHolder.title = (TextView) convertView.findViewById(R.id.id_title);
             convertView.setTag(viewHolder);

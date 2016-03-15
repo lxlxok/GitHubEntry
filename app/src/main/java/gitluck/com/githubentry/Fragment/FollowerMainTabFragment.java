@@ -35,7 +35,7 @@ public class FollowerMainTabFragment extends Fragment {
         Log.e("TAG","显示好友");
         View view =  inflater.inflate(R.layout.tab03, container, false);
         ListView lv = (ListView) view.findViewById(R.id.id_lv_chat3);
-        UserActivity.listFollowers.add(new ItemFollowers("https://avatars.githubusercontent.com/u/23469?v=3", "loading"));
+        UserActivity.listFollowers.add(new ItemFollowers("", ""));
         UserActivity.followerAdapter = new FollowerAdapter(this.getContext(), UserActivity.listFollowers, lv);
        lv.setAdapter(UserActivity.followerAdapter);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
