@@ -48,7 +48,6 @@ public class RepositoryActivity extends FragmentActivity {
     private FragmentPagerAdapter fragmentPagerAdapter;
 
     private int currentPageIndex;
-
     private DrawerLayout drawerLayout;
     private List<ItemMenu> menuList;
     private ListView leftDrawer;
@@ -66,6 +65,7 @@ public class RepositoryActivity extends FragmentActivity {
 
         TextView tvTitle = (TextView) findViewById(R.id.id_top1_title);
         tvTitle.setText(RepositoryName);
+
 
 
 

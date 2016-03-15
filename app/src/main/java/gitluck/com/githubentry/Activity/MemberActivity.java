@@ -69,6 +69,8 @@ public class MemberActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_member);
 
+        String UserName = getIntent().getStringExtra("name");
+        Log.e("TAGTAG", UserName + UserName);
 
 
         context = this;

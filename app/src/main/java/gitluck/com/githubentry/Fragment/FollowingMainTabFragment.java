@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +47,13 @@ public class FollowingMainTabFragment extends Fragment {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     Log.e("TAG", String.valueOf(position));
                     //Toast.makeText(getContext(), position, Toast.LENGTH_SHORT).show();
+
+                    // Use item_list.
+                    TextView textView = (TextView) view.findViewById(R.id.id_title);
+                    String title = (String) textView.getText();
+                    Log.e("TAGTAG", title);
                     Intent intent = new Intent(getActivity(), MemberActivity.class);
+                    intent.putExtra("name", title);
                     startActivity(intent);
                 }
             });
