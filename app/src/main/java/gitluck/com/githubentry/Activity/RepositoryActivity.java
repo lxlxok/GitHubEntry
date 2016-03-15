@@ -25,9 +25,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import gitluck.com.githubentry.Adapter.CommitAdapter;
+import gitluck.com.githubentry.Adapter.ContentAdapter;
 import gitluck.com.githubentry.Adapter.IssueAdapter;
 import gitluck.com.githubentry.Adapter.MenuAdapter;
 import gitluck.com.githubentry.Bean.ItemCommit;
+import gitluck.com.githubentry.Bean.ItemContent;
 import gitluck.com.githubentry.Bean.ItemFollowers;
 import gitluck.com.githubentry.Bean.ItemIssue;
 import gitluck.com.githubentry.Bean.ItemMenu;
@@ -42,6 +44,7 @@ import gitluck.com.githubentry.Interface.GitHubClientUsers;
 import gitluck.com.githubentry.R;
 import gitluck.com.githubentry.ServiceGenerator;
 import gitluck.com.githubentry.response.Commit;
+import gitluck.com.githubentry.response.Content;
 import gitluck.com.githubentry.response.Issue;
 import gitluck.com.githubentry.response.User;
 import retrofit2.Call;
@@ -79,6 +82,11 @@ public class RepositoryActivity extends FragmentActivity {
     public static CommitAdapter commitAdapter;
 
 
+    public static List<ItemContent> listContent = new ArrayList<ItemContent>();
+    public static ContentAdapter contentAdapter;
+
+
+
 
 
     @Override
@@ -105,6 +113,7 @@ public class RepositoryActivity extends FragmentActivity {
         context = this;
         initTabline();
         initView();
+        getContent();
     }
 
 
@@ -187,7 +196,7 @@ public class RepositoryActivity extends FragmentActivity {
                 switch (position) {
                     case 0:
                         codeTextView.setTextColor(Color.parseColor("#008000"));
-
+                        getContent();
                         break;
                     case 1:
                         commitsTextView.setTextColor(Color.parseColor("#008000"));
@@ -274,6 +283,45 @@ public class RepositoryActivity extends FragmentActivity {
 
 
                         commitAdapter.notifyDataSetChanged();
+
+                    }
+                } else {
+                    Log.i(TAG, "response failed");
+                    Log.i(TAG, "response failed code is" + response.code());
+                }
+            }
+
+            @Override
+            public void onFailure(Throwable t) {
+
+            }
+        });
+
+    }
+
+
+    public void getContent() {
+        GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
+        Call <List<Content>> call = userService.listContent("token " + token, reposPath[0], reposPath[1], "","1");
+        call.enqueue(new Callback<List<Content>>() {
+            @Override
+            public void onResponse(Response<List<Content>> response) {
+                if (response.isSuccess()) {
+                    Log.i(TAG, "response success code is" + response.code());
+
+                    // clean the listRepos
+                    listContent.clear();
+
+                    for (int i = 0; i < response.body().size(); i++) {
+
+                        int resource = R.drawable.file_48;
+
+                        if (response.body().get(i).getType().equals("dir")) {
+                            resource = R.drawable.folder_48;
+                        }
+
+                        listContent.add(new ItemContent(resource, response.body().get(i).getName()));
+                        contentAdapter.notifyDataSetChanged();
 
                     }
                 } else {

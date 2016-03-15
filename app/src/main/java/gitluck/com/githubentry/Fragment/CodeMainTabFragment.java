@@ -16,7 +16,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import gitluck.com.githubentry.Activity.MemberActivity;
+import gitluck.com.githubentry.Activity.RepositoryActivity;
 import gitluck.com.githubentry.Adapter.AboutAdapter;
+import gitluck.com.githubentry.Adapter.ContentAdapter;
 import gitluck.com.githubentry.Bean.ItemAbout;
 import gitluck.com.githubentry.R;
 
@@ -32,6 +34,10 @@ public class CodeMainTabFragment extends Fragment {
         Log.e("TAG","显示聊天");
         View view =  inflater.inflate(R.layout.tab01_code, container, false);
         ListView lv = (ListView) view.findViewById(R.id.id_lv_code);
+
+
+        RepositoryActivity.contentAdapter = new ContentAdapter(this.getContext(), RepositoryActivity.listContent);
+        lv.setAdapter(RepositoryActivity.contentAdapter);
 
         /*
 
