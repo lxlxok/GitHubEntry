@@ -39,13 +39,13 @@
                 android:id="@+id/user_img"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/samaritan_survillance"/>
+                android:src="@drawable/git_icon"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="Default User Id"
-                android:textSize="22sp"
+                android:text="GitHub Entry"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:gravity="center"/>
         </LinearLayout>

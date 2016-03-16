@@ -25,15 +25,28 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import gitluck.com.githubentry.Adapter.AboutAdapter;
+import gitluck.com.githubentry.Adapter.FollowerAdapter;
+import gitluck.com.githubentry.Adapter.FollowingAdapter;
 import gitluck.com.githubentry.Adapter.MenuAdapter;
+import gitluck.com.githubentry.Adapter.ReposAdapter;
+import gitluck.com.githubentry.Bean.ItemAbout;
+import gitluck.com.githubentry.Bean.ItemFollowers;
+import gitluck.com.githubentry.Bean.ItemFollowing;
 import gitluck.com.githubentry.Bean.ItemMenu;
+import gitluck.com.githubentry.Bean.ItemRepos;
 import gitluck.com.githubentry.Fragment.FollowerMainTabFragment;
 import gitluck.com.githubentry.Fragment.FollowingMainTabFragment;
+import gitluck.com.githubentry.Fragment.NewFollowerMainTabFragment;
+import gitluck.com.githubentry.Fragment.NewFollowingMainTabFragment;
+import gitluck.com.githubentry.Fragment.NewNewsMainTabFragment;
+import gitluck.com.githubentry.Fragment.NewRepoMainTabFragment;
 import gitluck.com.githubentry.Fragment.NewsMainTabFragment;
 import gitluck.com.githubentry.Fragment.RepoMainTabFragment;
 import gitluck.com.githubentry.Interface.GitHubClientUsers;
 import gitluck.com.githubentry.R;
 import gitluck.com.githubentry.ServiceGenerator;
+import gitluck.com.githubentry.response.Repository;
 import gitluck.com.githubentry.response.User;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -61,6 +74,22 @@ public class MemberActivity extends FragmentActivity {
     private List<ItemMenu> menuList;
     private ListView leftDrawer;
     private Context context;
+    public String userName;
+    public String token;
+
+    public static List<ItemAbout> newlistAbout = new ArrayList<>();
+    public static AboutAdapter newaboutAdapter;
+
+    public static List<ItemRepos> newlistRepos = new ArrayList<ItemRepos>();
+    public static ReposAdapter newreposAdapter;
+
+    public static List<ItemFollowing> newlistFollowings = new ArrayList<ItemFollowing>();
+    public static FollowingAdapter newfollowingAdapter;
+
+    public static List<ItemFollowers> newlistFollowers = new ArrayList<ItemFollowers>();
+    public static FollowerAdapter newfollowerAdapter;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,9 +98,13 @@ public class MemberActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_member);
 
-        String UserName = getIntent().getStringExtra("name");
-        Log.e("TAGTAG", UserName + UserName);
+        userName = getIntent().getStringExtra("name");
 
+
+        SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this.getApplicationContext());
+        token = settings.getString("token", "");
+        Log.i("TAGTAGTAG", "user token =" + token);
+        getUser();
 
         context = this;
         initTabline();
@@ -104,10 +137,10 @@ public class MemberActivity extends FragmentActivity {
          * 利用之前定义的三个Fragment，更新数据源。
          */
         data = new ArrayList<Fragment>();
-        NewsMainTabFragment tab01 = new NewsMainTabFragment();
-        RepoMainTabFragment tab02 = new RepoMainTabFragment();
-        FollowerMainTabFragment tab03 = new FollowerMainTabFragment();
-        FollowingMainTabFragment tab04 = new FollowingMainTabFragment();
+        NewNewsMainTabFragment tab01 = new NewNewsMainTabFragment();
+        NewRepoMainTabFragment tab02 = new NewRepoMainTabFragment();
+        NewFollowerMainTabFragment tab03 = new NewFollowerMainTabFragment();
+        NewFollowingMainTabFragment tab04 = new NewFollowingMainTabFragment();
 
         data.add(tab01);
         data.add(tab02);
@@ -163,12 +196,15 @@ public class MemberActivity extends FragmentActivity {
                         break;
                     case 1:
                         repoTextView.setTextColor(Color.parseColor("#008000"));
+                        getRepos();
                         break;
                     case 2:
                         followerTextView.setTextColor(Color.parseColor("#008000"));
+                        getFollower();
                         break;
                     case 3:
                         followingTextView.setTextColor(Color.parseColor("#008000"));
+                        getFollowing();
                         break;
                 }
                 currentPageIndex = position;
@@ -189,59 +225,24 @@ public class MemberActivity extends FragmentActivity {
     }
 
 
-
-/*
-
-    public void aboutUser() {
-        GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
-        Call<User> call = userService.authrizedUser("token "+token);
-        call.enqueue(new Callback<User>() {
-            @Override
-            public void onResponse(Response<User> response) {
-                if (response.isSuccess()) {
-                    username = response.body().getLogin();
-                    Realname = response.body().getName();
-                    email = response.body().getEmail();
-                    location = response.body().getLocation();
-                    company = response.body().getCompany();
-                    followerNUm = response.body().getFollowers();
-                    followingNum = response.body().getFollowing();
-                    reposNum = response.body().getPublicRepos();
-
-                    Log.i(TAG, "response code is" + response.code());
-                    Log.i(TAG, "response username is" + response.body().getLogin());
-
-                } else {
-
-                    Log.i(TAG, "response failed");
-                    Log.i(TAG, "response code is" + response.code());
-
-                }
-            }
-
-            @Override
-            public void onFailure(Throwable t) {
-
-            }
-        });
-    }
-
-
-
-
-
-
-
     public void getUser() {
         GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
-        Call<User> call = userService.getUser("lxlxok");
-
+        Call<User> call = userService.getUser("token " + token, userName);
         call.enqueue(new Callback<User>() {
             @Override
             public void onResponse(Response<User> response) {
                 if (response.isSuccess()) {
-                    Log.i(TAG, "Body is" + response.body().getName());
+
+                    newlistAbout.clear();
+                    newlistAbout.add(new ItemAbout(response.body().getAvatarUrl(), response.body().getLogin(), response.body().getEmail(), response.body().getLocation(), response.body().getCompany(), response.body().getFollowers(), response.body().getFollowing(), response.body().getPublicRepos()));
+                    newaboutAdapter.notifyDataSetChanged();
+
+                    Log.i("TAGTAGTAG", "response code is" + response.code());
+
                 } else {
+
+                    Log.i("TAGTAGTAG", "response failed");
+
 
                 }
             }
@@ -251,35 +252,116 @@ public class MemberActivity extends FragmentActivity {
 
             }
         });
+    }
 
+
+    public void getRepos() {
+        GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
+        Call <List<Repository>> call = userService.userRepos("token " + token, userName, "1");
+        call.enqueue(new Callback<List<Repository>>() {
+            @Override
+            public void onResponse(Response<List<Repository>> response) {
+                if (response.isSuccess()) {
+                    Log.i("TAG", "response success code is" + response.code());
+
+                    // clean the listRepos
+                    newlistRepos.clear();
+
+                    for (int i = 0; i < response.body().size(); i++) {
+                        int resource = R.drawable.book_48;
+                        //  Log.i(TAG, "login = " + response.body().get(i).getName());
+                        //   Log.i(TAG, "login = " + response.body().get(i).getDescription());
+                        //   Log.i(TAG, "login = " + response.body().get(i).getForksCount()); //int
+
+                        if (response.body().get(i).getFork()) {
+                            resource = R.drawable.fork_64;
+                        }
+                        if (response.body().get(i).getPrivate()) {
+                            resource = R.drawable.lock_48;
+                        }
+                        //  Log.i(TAG, "resource = " + resource);
+
+
+                        newlistRepos.add(new ItemRepos(resource, response.body().get(i).getFullName(), response.body().get(i).getLanguage(), response.body().get(i).getStargazersCount(), response.body().get(i).getWatchersCount()));
+                        newreposAdapter.notifyDataSetChanged();
+
+                    }
+                } else {
+                    Log.i("TAG", "response failed");
+                    Log.i("TAG", "response failed code is" + response.code());
+                }
+            }
+
+            @Override
+            public void onFailure(Throwable t) {
+
+            }
+        });
 
     }
 
 
 
-*/
+    public void getFollower() {
+        GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
+        Call <List<User>> call = userService.follower("token " + token, userName, "1");
+        call.enqueue(new Callback<List<User>>() {
+            @Override
+            public void onResponse(Response<List<User>> response) {
+                if (response.isSuccess()) {
+                    Log.i("TAG", "response success code is" + response.code());
+                    newlistFollowers.clear();
+                    for (int i = 0; i < response.body().size(); i++) {
+                        //Log.i(TAG, "login = " + response.body().get(i).getLogin());
 
+                        // Log.i(TAG, "testURLof getfollower" + response.body().get(i).getAvatarUrl());
+                        newlistFollowers.add(new ItemFollowers(response.body().get(i).getAvatarUrl(), response.body().get(i).getLogin()));
+                        newfollowerAdapter.notifyDataSetChanged();
 
-    /*
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.i(TAG,"resume" + token);
+                    }
+                } else {
+                    Log.i("TAG", "response failed");
+                    Log.i("TAG", "response failed code is" + response.code());
+                }
+            }
+
+            @Override
+            public void onFailure(Throwable t) {
+
+            }
+        });
+
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.i(TAG,"stop");
+    public void getFollowing() {
+        GitHubClientUsers userService = ServiceGenerator.createService(GitHubClientUsers.class);
+        Call <List<User>> call = userService.follwering("token " + token, userName, "1");
+        call.enqueue(new Callback<List<User>>() {
+            @Override
+            public void onResponse(Response<List<User>> response) {
+                if (response.isSuccess()) {
+                    newlistFollowings.clear();
+
+                    for (int i = 0; i < response.body().size(); i++) {
+
+                        newlistFollowings.add(new ItemFollowing(response.body().get(i).getAvatarUrl(), response.body().get(i).getLogin()));
+                        newfollowingAdapter.notifyDataSetChanged();
+
+
+                    }
+                } else {
+                    Log.i("TAG", "response failed");
+                    Log.i("TAG", "response failed code is" + response.code());
+                }
+            }
+
+            @Override
+            public void onFailure(Throwable t) {
+
+            }
+        });
+
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.i(TAG,"destroy");
-
-    }
-
-    */
 
 }

@@ -45,4 +45,12 @@
         android:layout_alignRight="@+id/password"
         android:layout_alignEnd="@+id/password"
         android:onClick="signIn"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/git_icon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
